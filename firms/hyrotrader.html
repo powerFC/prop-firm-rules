@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HyroTrader Rules 2026: Standard vs Swing Daily Loss Explained</title>
+<meta name="description" content="HyroTrader's 1-Step and 2-Step Standard/Swing crypto prop rules for 2026, verified 2026-07-16: profit targets, static drawdown, the intraday-high daily loss measurement, the 40% consistency rule and trading restrictions.">
+<link rel="canonical" href="https://powerfc.github.io/prop-firm-rules/firms/hyrotrader.html">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "HyroTrader Rules 2026: Standard vs Swing Daily Loss Explained",
+  "datePublished": "2026-07-16",
+  "dateModified": "2026-07-16",
+  "author": { "@type": "Organization", "name": "Prop Firm Rules" },
+  "publisher": { "@type": "Organization", "name": "Prop Firm Rules" },
+  "mainEntityOfPage": "https://powerfc.github.io/prop-firm-rules/firms/hyrotrader.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between HyroTrader's Standard and Swing variants?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same target, drawdown, minimum trading days, consistency rule and restrictions — the only difference is how the daily loss limit is measured. Standard measures it from that day's highest intraday balance (harsher — a net-profitable day can still breach if you gave back enough from the peak). Swing measures it as a fixed percentage of the prior day's balance instead (gentler), and is a paid checkout upgrade over Standard."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a profitable day still breach HyroTrader's daily loss limit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, on the Standard variant (and 2-Step Standard) — because the limit is measured from your intraday high, not your day-start balance, giving back enough from a big intraday peak can trigger a breach even if you close the day in the green."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What trading restrictions does HyroTrader enforce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Per our verified data: no single trade may lose more than 3% of account balance, martingale/grid strategies are banned, you can't hedge positions across multiple accounts, and low-cap/illiquid coin exposure is capped at 5%."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">Prop Firm <span>Rules</span></div>
+    <nav class="site-nav">
+      <a href="../index.html">All Firms</a>
+      <a href="../index.html#comparisons">Compare</a>
+      <a href="../payout-denials.html">Payout Denials</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="back-link" href="../index.html">← All firms</a>
+  <h1>HyroTrader Rules Explained (2026)</h1>
+  <div class="verified">✓ Rules verified 2026-07-16</div>
+
+  <p class="lede">
+    HyroTrader runs four crypto plans — 1-Step and 2-Step, each with a Standard and a Swing
+    daily-loss variant — all sharing a 40% best-day consistency rule and a strict trading
+    rulebook. The Standard-vs-Swing choice comes down entirely to how harshly your daily loss
+    is measured.
+  </p>
+
+  <h2>HyroTrader's plans at a glance</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Plan</th><th>Phase</th><th>Profit target</th><th>Daily loss</th>
+          <th>Max drawdown</th><th>Min. trading days</th><th>Consistency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1-Step Standard</td><td>Single phase</td><td>10%</td>
+          <td>4%, measured from the day's intraday high</td>
+          <td>Static, 6%</td><td>5</td><td>Best day ≤ 40% of total profit</td>
+        </tr>
+        <tr>
+          <td>1-Step Swing</td><td>Single phase</td><td>10%</td>
+          <td>4% of prior-day balance</td>
+          <td>Static, 6%</td><td>5</td><td>Best day ≤ 40% of total profit</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2-Step Standard</td>
+          <td>Phase 1</td><td>10%</td><td>5%, measured from the day's intraday high</td>
+          <td>Static, 10%</td><td>5</td><td>Best day ≤ 40% of total profit</td>
+        </tr>
+        <tr>
+          <td>Phase 2</td><td>5%</td><td>5%, measured from the day's intraday high</td>
+          <td>Static, 10%</td><td>5</td><td>Best day ≤ 40% of total profit</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2-Step Swing</td>
+          <td>Phase 1</td><td>10%</td><td>5% of prior-day balance</td>
+          <td>Static, 10%</td><td>5</td><td>Best day ≤ 40% of total profit</td>
+        </tr>
+        <tr>
+          <td>Phase 2</td><td>5%</td><td>5% of prior-day balance</td>
+          <td>Static, 10%</td><td>5</td><td>Best day ≤ 40% of total profit</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    Account sizes: $5,000–$200,000 on every plan. Every plan also carries the same trading
+    restrictions: no single trade may lose more than 3% of account balance, no martingale/grid
+    strategies, no hedging across multiple accounts, and a 5% cap on low-cap/illiquid coin
+    exposure. HyroTrader offers up to 100:1 leverage with real Bybit execution across 700+
+    pairs, a payout split starting at 70%, and a free 10-day trial.
+  </p>
+
+  <h2>How HyroTrader's drawdown and daily loss work</h2>
+  <p>
+    The overall max loss (6% on the 1-Step plans, 10% on the 2-Step) is modeled as
+    <strong>static</strong> in our data — HyroTrader's official rules table doesn't confirm
+    whether it trails, so treat it as our best current assumption.
+  </p>
+  <p>
+    The real difference between Standard and Swing is the daily loss measurement.
+    <strong>Standard</strong> uses <code>trailing_intraday_high</code>: the loss is measured
+    from that day's <em>highest</em> balance, not where you started the day — so a net-positive
+    day can still breach if you gave back enough from an intraday peak. <strong>Swing</strong>
+    measures the same percentage against the prior day's balance instead, a fixed and more
+    forgiving reference point, and is a paid checkout upgrade over Standard.
+  </p>
+
+  <h2>Notes &amp; unconfirmed details</h2>
+  <ul class="notes-list">
+    <li>A "qualifying" trading day under HyroTrader's own rules requires a trade of at least 5% of your initial balance with P&amp;L beyond ±1% — our data counts any logged day as a trading day, which is looser than that official definition.</li>
+    <li>The overall max loss (6% / 10%) is encoded as static because HyroTrader's official rules table doesn't indicate whether it trails.</li>
+    <li>Our source research also documents a mandatory stop-loss requirement within 5 minutes of opening any position — this operational rule isn't currently tracked as a breach condition in our data, but it is a real HyroTrader requirement worth knowing before you trade.</li>
+  </ul>
+
+  <div class="promo-card">
+    <h3>Running a HyroTrader challenge?</h3>
+    <p>Prop Firm Challenge Tracker logs your daily P&amp;L against HyroTrader's exact rules
+      above, including the harsher Standard daily-loss measurement — free for your first 2
+      challenges.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.elitetrendhub.proptracker">Get it on Google Play →</a>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <h3>What's the difference between HyroTrader's Standard and Swing variants?</h3>
+  <p>Same target, drawdown, minimum trading days, consistency rule and restrictions — the only
+    difference is how the daily loss limit is measured. Standard measures it from that day's
+    highest intraday balance (harsher — a net-profitable day can still breach if you gave back
+    enough from the peak). Swing measures it as a fixed percentage of the prior day's balance
+    instead (gentler), and is a paid checkout upgrade over Standard.</p>
+
+  <h3>Can a profitable day still breach HyroTrader's daily loss limit?</h3>
+  <p>Yes, on the Standard variant (and 2-Step Standard) — because the limit is measured from
+    your intraday high, not your day-start balance, giving back enough from a big intraday peak
+    can trigger a breach even if you close the day in the green.</p>
+
+  <h3>What trading restrictions does HyroTrader enforce?</h3>
+  <p>Per our verified data: no single trade may lose more than 3% of account balance,
+    martingale/grid strategies are banned, you can't hedge positions across multiple accounts,
+    and low-cap/illiquid coin exposure is capped at 5%.</p>
+
+  <p><a class="btn-outline" href="https://www.hyrotrader.com/?coupon=lzw1b2j">Visit HyroTrader's official site →</a></p>
+  <p><em>5% discount applied through this link.</em></p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../payout-denials.html">Payout Denials</a>
+      <a href="../compare/breakout-vs-hyrotrader.html">Breakout vs HyroTrader</a>
+    </div>
+    <p class="disclosure">
+      Rules are summarised from each firm's official materials and verified on the dates shown.
+      Always confirm on the firm's own site before purchasing. This site may earn a commission
+      from some links. Not financial advice.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

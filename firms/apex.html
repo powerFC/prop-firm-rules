@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Trader Funding Rules 2026: EOD vs Intraday Trailing Drawdown</title>
+<meta name="description" content="Apex Trader Funding's EOD Trail and Intraday Trail evaluation rules for 2026, verified 2026-07-11: per-size targets and drawdown amounts, the soft daily loss limit, and the 30-day time limit, explained plainly.">
+<link rel="canonical" href="https://powerfc.github.io/prop-firm-rules/firms/apex.html">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Apex Trader Funding Rules 2026: EOD vs Intraday Trailing Drawdown",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "author": { "@type": "Organization", "name": "Prop Firm Rules" },
+  "publisher": { "@type": "Organization", "name": "Prop Firm Rules" },
+  "mainEntityOfPage": "https://powerfc.github.io/prop-firm-rules/firms/apex.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between Apex's EOD Trail and Intraday Trail evaluations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The dollar target and drawdown amounts are identical per account size, but the drawdown measurement differs. EOD Trail only tracks your end-of-day closing balance, so intraday spikes don't move the floor. Intraday Trail tracks your live unrealized equity peak, so a big intraday high can raise your floor even if you close the day flat. The EOD variant also carries a soft daily loss limit; the Intraday variant has no daily loss limit at all."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a soft daily loss limit mean on Apex's EOD variant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hitting it pauses your trading for the rest of that day — it does not fail your account. It's a guardrail, not an elimination rule, unlike a normal (hard) daily loss limit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a time limit on an Apex Trader Funding evaluation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — 30 days, on both the EOD Trail and Intraday Trail variants, across all four account sizes."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">Prop Firm <span>Rules</span></div>
+    <nav class="site-nav">
+      <a href="../index.html">All Firms</a>
+      <a href="../index.html#comparisons">Compare</a>
+      <a href="../payout-denials.html">Payout Denials</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="back-link" href="../index.html">← All firms</a>
+  <h1>Apex Trader Funding Rules Explained (2026)</h1>
+  <div class="verified">✓ Rules verified 2026-07-11</div>
+
+  <p class="lede">
+    Apex Trader Funding ("Apex 4.0") runs a single-step, 30-day futures evaluation across four
+    account sizes, offered in two drawdown variants — EOD Trail and Intraday Trail. Same
+    dollar numbers per size, genuinely different risk mechanics.
+  </p>
+
+  <h2>Apex's plans at a glance</h2>
+  <h3>EOD Trail Evaluation</h3>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Size</th><th>Profit target</th><th>Daily loss (soft)</th><th>Max drawdown</th><th>Time limit</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>$25,000</td><td>6% ($1,500)</td><td>2% ($500), soft</td><td>EOD trailing, 4% ($1,000)</td><td>30 days</td></tr>
+        <tr><td>$50,000</td><td>6% ($3,000)</td><td>2% ($1,000), soft</td><td>EOD trailing, 4% ($2,000)</td><td>30 days</td></tr>
+        <tr><td>$100,000</td><td>6% ($6,000)</td><td>1.5% ($1,500), soft</td><td>EOD trailing, 3% ($3,000)</td><td>30 days</td></tr>
+        <tr><td>$150,000</td><td>6% ($9,000)</td><td>1.33% ($2,000), soft</td><td>EOD trailing, 2.67% ($4,000)</td><td>30 days</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Intraday Trail Evaluation</h3>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Size</th><th>Profit target</th><th>Daily loss</th><th>Max drawdown</th><th>Time limit</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>$25,000</td><td>6% ($1,500)</td><td>None</td><td>Intraday trailing, 4% ($1,000)</td><td>30 days</td></tr>
+        <tr><td>$50,000</td><td>6% ($3,000)</td><td>None</td><td>Intraday trailing, 4% ($2,000)</td><td>30 days</td></tr>
+        <tr><td>$100,000</td><td>6% ($6,000)</td><td>None</td><td>Intraday trailing, 3% ($3,000)</td><td>30 days</td></tr>
+        <tr><td>$150,000</td><td>6% ($9,000)</td><td>None</td><td>Intraday trailing, 2.67% ($4,000)</td><td>30 days</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Minimum trading days: 0 on both variants, all sizes. No consistency rule during evaluation.</p>
+
+  <h2>How Apex's drawdown works</h2>
+  <p>
+    <strong>EOD Trail:</strong> your floor trails 4%–2.67% (depending on size) below your
+    highest end-of-day closing balance — intraday spikes don't count, only where you close
+    each day. This variant pairs with a <strong>soft</strong> daily loss limit: hit it and
+    trading pauses for the rest of the day, but your account survives.
+  </p>
+  <p>
+    <strong>Intraday Trail:</strong> the same percentages, but the floor trails your
+    <strong>live unrealized equity peak</strong> instead — a big intraday high can raise your
+    floor even on a day you close flat or slightly down. There's no daily loss limit at all on
+    this variant, soft or otherwise, so the entire risk constraint is the (harsher) trailing
+    drawdown itself.
+  </p>
+
+  <h2>Notes &amp; unconfirmed details</h2>
+  <ul class="notes-list">
+    <li>The funded (PA) phase — activation fee, contract caps, a 50% consistency rule, and the payout ladder — is not modeled here; this page covers the evaluation phase only.</li>
+  </ul>
+
+  <div class="promo-card">
+    <h3>Running an Apex evaluation?</h3>
+    <p>Prop Firm Challenge Tracker logs your daily P&amp;L against Apex's exact per-size rules
+      above — including the EOD-vs-intraday distinction and the soft daily loss limit — free
+      for your first 2 challenges.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.elitetrendhub.proptracker">Get it on Google Play →</a>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <h3>What's the difference between Apex's EOD Trail and Intraday Trail evaluations?</h3>
+  <p>The dollar target and drawdown amounts are identical per account size, but the drawdown
+    measurement differs. EOD Trail only tracks your end-of-day closing balance, so intraday
+    spikes don't move the floor. Intraday Trail tracks your live unrealized equity peak, so a
+    big intraday high can raise your floor even if you close the day flat. The EOD variant also
+    carries a soft daily loss limit; the Intraday variant has no daily loss limit at all.</p>
+
+  <h3>What does a soft daily loss limit mean on Apex's EOD variant?</h3>
+  <p>Hitting it pauses your trading for the rest of that day — it does not fail your account.
+    It's a guardrail, not an elimination rule, unlike a normal (hard) daily loss limit.</p>
+
+  <h3>Is there a time limit on an Apex Trader Funding evaluation?</h3>
+  <p>Yes — 30 days, on both the EOD Trail and Intraday Trail variants, across all four account
+    sizes.</p>
+
+  <p><a class="btn-outline" href="https://apextraderfunding.com">Visit Apex Trader Funding's official site →</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../payout-denials.html">Payout Denials</a>
+      <a href="../compare/apex-vs-topstep.html">Apex vs TopStep</a>
+    </div>
+    <p class="disclosure">
+      Rules are summarised from each firm's official materials and verified on the dates shown.
+      Always confirm on the firm's own site before purchasing. This site may earn a commission
+      from some links. Not financial advice.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

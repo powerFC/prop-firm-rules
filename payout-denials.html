@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Prop Firm Payouts Get Denied 2026: Verified Triggers Explained</title>
+<meta name="description" content="The verified reasons a prop firm payout or pass request gets denied even on a profitable account in 2026 — consistency rules, minimum trading days, cross-account hedging, martingale bans, inactivity, and soft vs hard daily loss limits.">
+<link rel="canonical" href="https://powerfc.github.io/prop-firm-rules/payout-denials.html">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Prop Firm Payouts Get Denied 2026: Verified Triggers Explained",
+  "datePublished": "2026-07-23",
+  "dateModified": "2026-07-23",
+  "author": { "@type": "Organization", "name": "Prop Firm Rules" },
+  "publisher": { "@type": "Organization", "name": "Prop Firm Rules" },
+  "mainEntityOfPage": "https://powerfc.github.io/prop-firm-rules/payout-denials.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can a profitable trader still get their payout denied?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — consistency rules are the most common way. FTMO's 1-Step, The5%ers, HyroTrader and FundingPips Zero all cap how much of your profit can come from a single best day. If one day dominates your results, you fail the rule even while net profitable overall."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does hitting a daily loss limit always fail the account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not always. Apex Trader Funding's EOD Trail variant treats its daily loss limit as soft — hitting it pauses trading for the rest of the day but does not fail the account. Every other daily loss limit in our verified data is hard: breaching it fails the account immediately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the strictest rulebook among the crypto prop firms in this data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HyroTrader. It bans martingale/grid strategies and cross-account hedging, and caps both per-trade loss (3% of balance) and low-cap coin exposure (5%). Breaking any of these can void a payout even without ever touching the drawdown or daily loss limits."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">Prop Firm <span>Rules</span></div>
+    <nav class="site-nav">
+      <a href="index.html">All Firms</a>
+      <a href="index.html#comparisons">Compare</a>
+      <a href="payout-denials.html">Payout Denials</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="back-link" href="index.html">← All firms</a>
+  <h1>Why Prop Firm Payouts Get Denied (2026)</h1>
+  <p class="lede">
+    A profitable-looking account doesn't automatically mean a clean payout or pass request. The
+    triggers below are drawn directly from the verified rules of the nine firms this site
+    covers — nothing here is a guess at what "might" trip you up generically.
+  </p>
+
+  <h2>1. Consistency (best-day) rules</h2>
+  <p>
+    The single most common reason a profitable account still fails a pass or payout request.
+    A consistency rule caps how much of your total profit is allowed to come from your single
+    best day — if one big day is doing most of the work, you fail the rule even while sitting
+    on a healthy net gain.
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Firm / plan</th><th>Rule</th></tr></thead>
+      <tbody>
+        <tr><td><a href="firms/ftmo.html">FTMO</a> (1-Step)</td><td>Best day ≤ 50% of positive-days profit</td></tr>
+        <tr><td><a href="firms/the5ers.html">The5%ers</a> (both plans)</td><td>Best day ≤ 50% of total profit</td></tr>
+        <tr><td><a href="firms/hyrotrader.html">HyroTrader</a> (all plans)</td><td>Best day ≤ 40% of total profit</td></tr>
+        <tr><td><a href="firms/fundingpips.html">FundingPips</a> (Zero)</td><td>Best day ≤ 15% of total profit</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    Note the denominator differs by firm: FTMO's 1-Step excludes losing days from the total
+    (only your positive days count), while The5%ers, HyroTrader and FundingPips Zero all
+    compare against your <em>total net</em> profit — a red day drags that number down and makes
+    the rule easier to breach.
+  </p>
+
+  <h2>2. Minimum trading days and minimum profitable days</h2>
+  <p>
+    Hitting your profit target early doesn't automatically mean you're ready to pass — several
+    firms also require a minimum number of trading days (FundedNext: 5; The5%ers 2-Step: 1;
+    FundingPips 1 Step/2 Step Standard: 3; HyroTrader: 5), and FundingPips Zero additionally
+    requires at least 7 <em>profitable</em> days specifically before you're eligible for a
+    payout — a stricter bar than just "any 7 trading days."
+  </p>
+
+  <h2>3. Cross-account hedging and martingale bans</h2>
+  <p>
+    HyroTrader is the only firm in our data that explicitly bans both cross-account hedging
+    (offsetting risk by taking opposite positions across your own or someone else's accounts)
+    and martingale/grid strategies (doubling down after a loss). Breaking either can void a
+    payout regardless of how the account otherwise performed.
+  </p>
+
+  <h2>4. Per-trade loss caps and exposure limits</h2>
+  <p>
+    Also HyroTrader-specific in our data: no single trade may lose more than 3% of account
+    balance, and exposure to low-cap/illiquid coins is capped at 5% of the account. Neither
+    limit shows up in your daily P&amp;L directly — they're evaluated per trade, so a single
+    oversized loss or an outsized low-cap position can trigger a denial that a simple balance
+    check wouldn't catch.
+  </p>
+
+  <h2>5. Inactivity</h2>
+  <p>
+    FundedNext's Stellar CFD line (all four plans) can close your account after 60 days without
+    a trade. This is the only inactivity-based restriction in our verified data — none of the
+    other eight firms carry an equivalent rule.
+  </p>
+
+  <h2>6. Soft vs. hard daily loss limits — a nuance worth knowing</h2>
+  <p>
+    Most daily loss limits are <strong>hard</strong>: breach them and the account fails,
+    payout or not. Apex Trader Funding's EOD Trail variant is the one exception in our data —
+    its daily loss limit is <strong>soft</strong>, meaning a breach only pauses trading for the
+    rest of that day rather than failing the account. Don't assume every firm's daily limit
+    works this way — Apex's own Intraday Trail variant, and every other firm on this site, use
+    a hard daily loss limit (where they have one at all).
+  </p>
+
+  <h2>Other commonly-discussed denial triggers (not in our verified data)</h2>
+  <p>
+    Traders often ask about a handful of other categories — VPN or IP-based region checks,
+    blackout windows around major news events, per-lot position-size caps, and bans on
+    copy-trading or signal-following. None of these appear in the verified rules data this site
+    is built from (either in <code>prop_firm_presets.md</code> or the underlying rules engine),
+    so we deliberately don't attribute specific policies here to any of the nine firms covered.
+    Some firms do enforce rules like these as part of their broader terms of service — always
+    check a firm's official terms directly before assuming what is or isn't allowed.
+  </p>
+
+  <div class="promo-card">
+    <h3>Don't find out about a breach after the fact</h3>
+    <p>Prop Firm Challenge Tracker checks your logged daily P&amp;L against your firm's exact
+      rules — including consistency, minimum days, and drawdown — and tells you in real time
+      how much room you have left. Free for your first 2 challenges.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.elitetrendhub.proptracker">Get it on Google Play →</a>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <h3>Can a profitable trader still get their payout denied?</h3>
+  <p>Yes — consistency rules are the most common way. FTMO's 1-Step, The5%ers, HyroTrader and
+    FundingPips Zero all cap how much of your profit can come from a single best day. If one
+    day dominates your results, you fail the rule even while net profitable overall.</p>
+
+  <h3>Does hitting a daily loss limit always fail the account?</h3>
+  <p>Not always. Apex Trader Funding's EOD Trail variant treats its daily loss limit as soft —
+    hitting it pauses trading for the rest of the day but does not fail the account. Every
+    other daily loss limit in our verified data is hard: breaching it fails the account
+    immediately.</p>
+
+  <h3>What's the strictest rulebook among the crypto prop firms in this data?</h3>
+  <p>HyroTrader. It bans martingale/grid strategies and cross-account hedging, and caps both
+    per-trade loss (3% of balance) and low-cap coin exposure (5%). Breaking any of these can
+    void a payout even without ever touching the drawdown or daily loss limits.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="compare/apex-vs-topstep.html">Compare</a>
+    </div>
+    <p class="disclosure">
+      Rules are summarised from each firm's official materials and verified on the dates shown.
+      Always confirm on the firm's own site before purchasing. This site may earn a commission
+      from some links. Not financial advice.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

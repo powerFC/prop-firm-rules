@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FTMO vs The5%ers 2026: 1-Step Rules Compared</title>
+<meta name="description" content="FTMO's 1-Step Evaluation vs The5%ers' 1-Step, compared 2026: identical target and daily loss, but a trailing vs static drawdown and two different consistency-rule denominators — and which trader each suits.">
+<link rel="canonical" href="https://powerfc.github.io/prop-firm-rules/compare/ftmo-vs-the5ers.html">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "FTMO vs The5%ers 2026: 1-Step Rules Compared",
+  "datePublished": "2026-07-16",
+  "dateModified": "2026-07-16",
+  "author": { "@type": "Organization", "name": "Prop Firm Rules" },
+  "publisher": { "@type": "Organization", "name": "Prop Firm Rules" },
+  "mainEntityOfPage": "https://powerfc.github.io/prop-firm-rules/compare/ftmo-vs-the5ers.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is FTMO or The5%ers' max drawdown stricter on the 1-Step plans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The5%ers' 1-Step uses a flat static 6% floor that never moves. FTMO's 1-Step is modeled as a 10% end-of-day trailing floor in our data — a larger headline percentage, but not officially confirmed by FTMO, and a trailing floor behaves differently from a static one as your balance changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do FTMO and The5%ers' consistency rules differ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both cap your best single day at 50%, but against different denominators. FTMO's 1-Step compares your best day to the sum of only your positive days' profit — losing days don't count against you. The5%ers' 1-Step compares your best day to your total net profit, so red days do count against you, making it the stricter of the two in practice."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">Prop Firm <span>Rules</span></div>
+    <nav class="site-nav">
+      <a href="../index.html">All Firms</a>
+      <a href="../index.html#comparisons">Compare</a>
+      <a href="../payout-denials.html">Payout Denials</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="back-link" href="../index.html">← All firms</a>
+  <h1>FTMO vs The5%ers (2026)</h1>
+  <p class="lede">
+    FTMO's 1-Step Evaluation and The5%ers' 1-Step share an identical target and daily loss
+    percentage — but diverge on drawdown type and on exactly how their 50% consistency rules
+    are calculated.
+  </p>
+
+  <h2>Side by side (1-Step plans)</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Firm</th><th>Profit target</th><th>Daily loss</th><th>Max drawdown</th><th>Min. trading days</th><th>Consistency</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="../firms/ftmo.html">FTMO</a> (1-Step)</td><td>10%</td><td>3% fixed</td>
+          <td>EOD trailing, 10%*</td><td>0</td><td>Best day ≤ 50% of positive-days profit</td>
+        </tr>
+        <tr>
+          <td><a href="../firms/the5ers.html">The5%ers</a> (1-Step)</td><td>10%</td><td>3% fixed</td>
+          <td>Static, 6%</td><td>0</td><td>Best day ≤ 50% of total profit</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><em>* FTMO's 1-Step drawdown type isn't officially confirmed — see FTMO's firm page for detail.</em></p>
+
+  <h2>What actually differs</h2>
+  <p>
+    Target and daily loss are identical: 10% and 3% fixed, on both. The drawdown mechanic is
+    where they split. The5%ers' 6% floor is <strong>static</strong> — fixed the moment you
+    start, never adjusted. FTMO's 10% floor is modeled as <strong>end-of-day trailing</strong>
+    in our data (per secondary sources, not officially confirmed by FTMO), meaning it rises
+    with your balance highs rather than staying put.
+  </p>
+  <p>
+    The consistency rules look identical at a glance — both cap your best day at 50% — but the
+    denominator differs. FTMO's version excludes losing days entirely, comparing your best day
+    only to the sum of your positive days. The5%ers' version compares your best day to your
+    <em>total net profit</em>, so a red day drags the denominator down and makes the 50% cap
+    easier to breach in practice.
+  </p>
+
+  <h2>Which suits which trader</h2>
+  <div class="suits-grid">
+    <div class="card">
+      <h3>The5%ers suits you if…</h3>
+      <ul>
+        <li>You want a drawdown floor you can calculate exactly on day one and never have to re-check.</li>
+        <li>You don't expect many red days — its consistency rule punishes them more directly than FTMO's does.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>FTMO suits you if…</h3>
+      <ul>
+        <li>You occasionally have losing days and want a consistency rule that doesn't penalize you for them.</li>
+        <li>You're comfortable with a trailing floor whose exact behavior isn't fully confirmed, in exchange for FTMO's broader brand recognition and account-size options.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="promo-card">
+    <h3>Picked one? Track it properly.</h3>
+    <p>Prop Firm Challenge Tracker logs your daily P&amp;L against whichever firm's exact rules
+      you're trading under — free for your first 2 challenges.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.elitetrendhub.proptracker">Get it on Google Play →</a>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <h3>Is FTMO or The5%ers' max drawdown stricter on the 1-Step plans?</h3>
+  <p>The5%ers' 1-Step uses a flat static 6% floor that never moves. FTMO's 1-Step is modeled as
+    a 10% end-of-day trailing floor in our data — a larger headline percentage, but not
+    officially confirmed by FTMO, and a trailing floor behaves differently from a static one as
+    your balance changes.</p>
+
+  <h3>How do FTMO and The5%ers' consistency rules differ?</h3>
+  <p>Both cap your best single day at 50%, but against different denominators. FTMO's 1-Step
+    compares your best day to the sum of only your positive days' profit — losing days don't
+    count against you. The5%ers' 1-Step compares your best day to your total net profit, so red
+    days do count against you, making it the stricter of the two in practice.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../firms/ftmo.html">FTMO Rules</a>
+      <a href="../firms/the5ers.html">The5%ers Rules</a>
+      <a href="../payout-denials.html">Payout Denials</a>
+    </div>
+    <p class="disclosure">
+      Rules are summarised from each firm's official materials and verified on the dates shown.
+      Always confirm on the firm's own site before purchasing. This site may earn a commission
+      from some links. Not financial advice.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

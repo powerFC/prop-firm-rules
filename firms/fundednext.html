@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FundedNext Rules 2026: Stellar Plans, Drawdown &amp; Inactivity Explained</title>
+<meta name="description" content="FundedNext's Stellar 2-Step, 1-Step, Lite and Instant CFD rules for 2026, verified 2026-07-16: profit targets, static drawdown, daily loss limits and the 60-day inactivity restriction, explained plainly.">
+<link rel="canonical" href="https://powerfc.github.io/prop-firm-rules/firms/fundednext.html">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "FundedNext Rules 2026: Stellar Plans, Drawdown & Inactivity Explained",
+  "datePublished": "2026-07-16",
+  "dateModified": "2026-07-16",
+  "author": { "@type": "Organization", "name": "Prop Firm Rules" },
+  "publisher": { "@type": "Organization", "name": "Prop Firm Rules" },
+  "mainEntityOfPage": "https://powerfc.github.io/prop-firm-rules/firms/fundednext.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's FundedNext's inactivity rule?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All four Stellar CFD plans carry a 60-day inactivity restriction — the account can be closed if you don't place a trade for 60 consecutive days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does FundedNext's daily loss limit count open positions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, per our notes — the daily loss calculation includes unrealized (open-position) profit and loss, and resets at 00:00 server time. Tracking tools that only look at closed daily P&L (including our own data here) can't see a large intraday open-position drawdown that closed back out before the reset."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which FundedNext Stellar plan has the easiest profit target?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stellar Instant has no profit target at all — you're funded from day one. Among the plans that do have a target, Stellar 2-Step and Stellar Lite both start at 8% for Phase 1, the lowest first-phase target among FundedNext's four Stellar plans."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">Prop Firm <span>Rules</span></div>
+    <nav class="site-nav">
+      <a href="../index.html">All Firms</a>
+      <a href="../index.html#comparisons">Compare</a>
+      <a href="../payout-denials.html">Payout Denials</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="back-link" href="../index.html">← All firms</a>
+  <h1>FundedNext Rules Explained (2026)</h1>
+  <div class="verified">✓ Rules verified 2026-07-16</div>
+
+  <p class="lede">
+    FundedNext's CFD line runs four "Stellar" plans — 2-Step, 1-Step, Lite and Instant — all
+    using a static drawdown and all carrying the same 60-day inactivity restriction. This page
+    covers the CFD line only; FundedNext's separate futures products (Flex/Legacy/Rapid) are a
+    different lineup not covered by our data.
+  </p>
+
+  <h2>FundedNext's plans at a glance</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Plan</th><th>Phase</th><th>Profit target</th><th>Daily loss</th>
+          <th>Max drawdown</th><th>Min. trading days</th><th>Restrictions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Stellar 2-Step</td>
+          <td>Phase 1</td><td>8%</td><td>5% fixed</td><td>Static, 10%</td><td>5</td><td>Inactivity (60d)</td>
+        </tr>
+        <tr>
+          <td>Phase 2</td><td>5%</td><td>5% fixed</td><td>Static, 10%</td><td>5</td><td>Inactivity (60d)</td>
+        </tr>
+        <tr>
+          <td>Stellar 1-Step</td><td>Single phase</td><td>10%</td><td>3% fixed</td><td>Static, 6%</td><td>2</td><td>Inactivity (60d)</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Stellar Lite</td>
+          <td>Phase 1</td><td>8%</td><td>4% fixed</td><td>Static, 8%</td><td>5</td><td>Inactivity (60d)</td>
+        </tr>
+        <tr>
+          <td>Phase 2</td><td>4%</td><td>4% fixed</td><td>Static, 8%</td><td>5</td><td>Inactivity (60d)</td>
+        </tr>
+        <tr>
+          <td>Stellar Instant</td><td>Funded from day one</td><td>None</td><td>None</td>
+          <td>EOD trailing, 6%, locks at starting balance</td><td>0</td><td>Inactivity (60d)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>No consistency rule and no time limit on any Stellar plan.</p>
+
+  <h2>How FundedNext's drawdown works</h2>
+  <p>
+    Stellar 2-Step, 1-Step and Lite all use a <strong>static</strong> drawdown — a fixed
+    percentage of your starting balance, calculated once and never moved, regardless of how
+    your balance changes.
+  </p>
+  <p>
+    Stellar Instant is different: "rises with profits, never decreases, stops at initial
+    balance" per FundedNext's own description — that's an <strong>end-of-day trailing</strong>
+    floor that <strong>locks at your starting balance</strong> once it reaches it, the same
+    mechanic TopStep and Breakout's 2-Step use. Since Instant has no profit target, this
+    trailing-and-locking floor is effectively the entire risk rule you're trading against.
+  </p>
+
+  <h2>Notes &amp; unconfirmed details</h2>
+  <ul class="notes-list">
+    <li>Account sizes for the Stellar lineup ($10,000 / $25,000 / $50,000 / $100,000 / $200,000) are not yet independently re-verified — the figures are a placeholder inherited from a prior preset. Confirm at fundednext.com.</li>
+    <li>Daily loss includes unrealized (open-position) P&amp;L and resets at 00:00 server time — this data (and app tracking built on it) only reflects closed daily P&amp;L, so a large intraday open-position drawdown that closed back out before the reset won't be visible here.</li>
+    <li>This page covers the CFD line only; FundedNext's separate futures plans (Flex/Legacy/Rapid) are a different product line not covered by our data.</li>
+  </ul>
+
+  <div class="promo-card">
+    <h3>Running a FundedNext challenge?</h3>
+    <p>Prop Firm Challenge Tracker logs your daily P&amp;L against FundedNext's exact rules
+      above and flags your inactivity-restriction countdown — free for your first 2 challenges.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.elitetrendhub.proptracker">Get it on Google Play →</a>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <h3>What's FundedNext's inactivity rule?</h3>
+  <p>All four Stellar CFD plans carry a 60-day inactivity restriction — the account can be
+    closed if you don't place a trade for 60 consecutive days.</p>
+
+  <h3>Does FundedNext's daily loss limit count open positions?</h3>
+  <p>Yes, per our notes — the daily loss calculation includes unrealized (open-position) profit
+    and loss, and resets at 00:00 server time. Tracking tools that only look at closed daily
+    P&amp;L (including our own data here) can't see a large intraday open-position drawdown
+    that closed back out before the reset.</p>
+
+  <h3>Which FundedNext Stellar plan has the easiest profit target?</h3>
+  <p>Stellar Instant has no profit target at all — you're funded from day one. Among the plans
+    that do have a target, Stellar 2-Step and Stellar Lite both start at 8% for Phase 1, the
+    lowest first-phase target among FundedNext's four Stellar plans.</p>
+
+  <p><a class="btn-outline" href="https://fundednext.com">Visit FundedNext's official site →</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../payout-denials.html">Payout Denials</a>
+      <a href="../compare/ftmo-vs-fundednext.html">FTMO vs FundedNext</a>
+    </div>
+    <p class="disclosure">
+      Rules are summarised from each firm's official materials and verified on the dates shown.
+      Always confirm on the firm's own site before purchasing. This site may earn a commission
+      from some links. Not financial advice.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
