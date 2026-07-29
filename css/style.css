@@ -112,39 +112,6 @@ td.num, th.num { text-align: right; }
 }
 .card h3 { margin-top: 0; }
 
-.promo-card {
-  background: linear-gradient(135deg, rgba(129,140,248,0.14), rgba(129,140,248,0.03));
-  border: 1px solid rgba(129, 140, 248, 0.4);
-  border-radius: 12px;
-  padding: 20px;
-  margin: 28px 0;
-}
-.promo-card h3 { margin-top: 0; color: var(--text); }
-.promo-card p { color: var(--muted); }
-
-.btn {
-  display: inline-block;
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-weight: 700;
-  font-size: 14px;
-  border-radius: 20px;
-  padding: 10px 20px;
-  margin-top: 4px;
-}
-.btn:hover { text-decoration: none; opacity: 0.9; }
-.btn-outline {
-  display: inline-block;
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  font-weight: 700;
-  font-size: 14px;
-  border-radius: 20px;
-  padding: 9px 19px;
-  margin-top: 4px;
-}
-.btn-outline:hover { text-decoration: none; background: rgba(129,140,248,0.1); }
-
 /* ── Firm-page CTA cards (affiliate + app cross-promo) ─────────────────── */
 .cta-card {
   border-radius: 16px;
