@@ -11,6 +11,8 @@
   --accent-ink: #0b1220;
   --win: #4ade80;
   --loss: #f87171;
+  --cta-green: #34d399;
+  --cta-green-ink: #062b1f;
 }
 
 * { box-sizing: border-box; }
@@ -142,6 +144,66 @@ td.num, th.num { text-align: right; }
   margin-top: 4px;
 }
 .btn-outline:hover { text-decoration: none; background: rgba(129,140,248,0.1); }
+
+/* ── Firm-page CTA cards (affiliate + app cross-promo) ─────────────────── */
+.cta-card {
+  border-radius: 16px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 24px 26px;
+  margin: 26px 0;
+}
+.cta-card h3 {
+  margin: 0 0 8px;
+  font-size: 19px;
+  color: var(--text);
+}
+.cta-card p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 14.5px;
+}
+.cta-note {
+  display: block;
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.cta-card--affiliate {
+  background: linear-gradient(135deg, rgba(129, 140, 248, 0.16), rgba(129, 140, 248, 0.04));
+  border-color: rgba(129, 140, 248, 0.45);
+}
+.cta-card--app {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.16), rgba(52, 211, 153, 0.04));
+  border-color: rgba(52, 211, 153, 0.45);
+}
+
+.cta-btn {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 12px;
+  padding: 16px 30px;
+  text-align: center;
+}
+.cta-btn:hover { text-decoration: none; }
+
+.cta-card--affiliate .cta-btn {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.cta-card--affiliate .cta-btn:hover { background: #949ffb; }
+
+.cta-card--app .cta-btn {
+  background: var(--cta-green);
+  color: var(--cta-green-ink);
+}
+.cta-card--app .cta-btn:hover { background: #55dcaa; }
+
+@media (max-width: 480px) {
+  .cta-btn { display: block; width: 100%; }
+}
 
 /* ── Firm directory (index) ────────────────────────────────────────────── */
 .firm-grid { display: grid; gap: 10px; margin-bottom: 24px; }
