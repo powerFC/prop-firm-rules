@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="600" viewBox="0 0 300 600">
+  <rect width="300" height="600" rx="24" fill="#111a2e"/>
+  <rect x="1" y="1" width="298" height="598" rx="23" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <rect x="110" y="16" width="80" height="14" rx="7" fill="#1e293b"/>
+  <g stroke="#334155" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="118" y="270" width="64" height="50" rx="6"/>
+    <circle cx="150" cy="290" r="9"/>
+    <path d="M126 270 l6 -14 h36 l6 14"/>
+  </g>
+  <text x="150" y="345" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Screenshot preview</text>
+</svg>

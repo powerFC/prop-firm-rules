@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compound Growth and Risk of Ruin Calculator | FuturesEdge</title>
+<meta name="description" content="Project compound growth and calculate your real risk of ruin side by side — a free calculator for traders, coming soon to Google Play from FuturesEdge.">
+<link rel="canonical" href="https://futuresedgetrade.app/apps/compound-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Compound Growth and Risk of Ruin Calculator">
+<meta property="og:description" content="Project compound growth and see your real risk of ruin, side by side. Coming soon to Google Play.">
+<meta property="og:url" content="https://futuresedgetrade.app/apps/compound-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Compound Growth & Risk Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Android",
+  "url": "https://futuresedgetrade.app/apps/compound-calculator.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the risk of ruin number an exact simulation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No — it's the classical closed-form gambler's-ruin approximation, treating fixed-fractional risk as a fixed number of equal capital units, rather than a full Monte Carlo simulation. Real risk of ruin with compounding position sizing and a stopping rule is generally lower than this approximation." }
+    },
+    {
+      "@type": "Question",
+      "name": "What counts as \"ruin\" in the calculator?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A drawdown threshold you choose yourself — for example 50% — not necessarily a complete loss of capital. You set the win rate, risk per trade, average reward-to-risk and the ruin threshold, and the app calculates the probability of hitting it." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the app store my numbers anywhere?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. All calculations stay on your device — no account, no cloud, no data collected." }
+    },
+    {
+      "@type": "Question",
+      "name": "When will this app be available?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It's built and in final testing ahead of its Google Play submission. This page will switch to a Play Store link the moment it's live." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">FuturesEdge</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#apps">Apps</a>
+      <a href="../prop-firm-rules/index.html">Prop Firm Rules</a>
+      <a href="../exchanges/index.html">Exchanges</a>
+      <a href="../guides/index.html">Guides</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="back-link" href="../index.html#apps">← All apps</a>
+  <h1>Compound Growth and Risk of Ruin Calculator</h1>
+  <p class="lede">
+    Two calculators, one screen: project what steady compounding actually does to a balance
+    over time, then check the number that dream projection doesn't show you — the real
+    probability that your risk-per-trade and win rate lead to ruin, not riches.
+  </p>
+
+  <div class="cta-card cta-card--soon">
+    <h3>Coming soon</h3>
+    <p>This app is built and in final testing ahead of its Google Play submission.</p>
+    <a class="cta-btn" href="#">Coming soon to Google Play</a>
+  </div>
+
+  <h2>Why growth and risk belong on the same screen</h2>
+  <p>
+    Compound growth calculators are everywhere, and they're seductive for a reason — a modest
+    per-period gain, compounded for a year, produces a chart that climbs into numbers that feel
+    inevitable. What most of those calculators leave out is the other half of the same math:
+    the same aggressive risk-per-trade that makes the growth curve steep is very often the exact
+    setting that makes ruin likely, not unlikely. This calculator puts both numbers in front of
+    you at once, so a growth projection can't be read without also seeing what it implies about
+    your risk of blowing up trying to get there.
+  </p>
+
+  <h2>What's inside</h2>
+  <ul class="feature-list">
+    <li>Compound growth projector <span>Starting balance, gain per period, and a period unit of day, week or month, projected up to 520 periods — with final balance, total return and total gain</span></li>
+    <li>Growth curve chart <span>Linear or log scale, with the chart automatically defaulting to log once growth passes 20×, so the curve stays readable at any scale</span></li>
+    <li>Milestone markers <span>See exactly which period your balance crosses 2×, 5× and 10× your starting balance</span></li>
+    <li>Share your projection <span>One tap to share your starting balance, gain rate and projected result</span></li>
+    <li>Risk of ruin calculator <span>Win rate, risk per trade, average reward-to-risk and a ruin threshold you set, producing a risk-of-ruin percentage, expectancy in R, and a realistic longest losing streak</span></li>
+    <li>Plain-English verdict <span>A one-line read on whether your inputs describe a sustainable risk profile or a coin flip</span></li>
+    <li>Private by design <span>All calculations stay on your device — no account, no data collected</span></li>
+  </ul>
+
+  <h2>How the risk of ruin is calculated</h2>
+  <p>
+    This isn't a full trade-by-trade simulation — it's the classical closed-form gambler's-ruin
+    result, applied by approximating fixed-fractional risk (a percentage of a balance that
+    itself grows and shrinks trade to trade) as a fixed number of equal capital units. It's a
+    well-established approximation, not a guess, and it comes with an honest caveat: real risk
+    of ruin, once you account for position sizing that compounds and a sensible stopping rule
+    instead of trading forever, is generally lower than what this calculator shows. Treat the
+    number as a conservative upper bound on your risk, not a precise forecast.
+  </p>
+
+  <h2>Screenshots</h2>
+  <div class="screenshot-row">
+    <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Compound growth chart with milestone markers at 2x, 5x and 10x">
+    <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Risk of ruin card showing risk percentage, expectancy and losing streak">
+    <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Growth inputs screen with starting balance and gain per period">
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <h3>Is the risk of ruin number an exact simulation?</h3>
+  <p>No — it's the classical closed-form gambler's-ruin approximation, treating fixed-fractional
+    risk as a fixed number of equal capital units, rather than a full Monte Carlo simulation.
+    Real risk of ruin with compounding position sizing and a stopping rule is generally lower
+    than this approximation.</p>
+
+  <h3>What counts as "ruin" in the calculator?</h3>
+  <p>A drawdown threshold you choose yourself — for example 50% — not necessarily a complete
+    loss of capital. You set the win rate, risk per trade, average reward-to-risk and the ruin
+    threshold, and the app calculates the probability of hitting it.</p>
+
+  <h3>Does the app store my numbers anywhere?</h3>
+  <p>No. All calculations stay on your device — no account, no cloud, no data collected.</p>
+
+  <h3>When will this app be available?</h3>
+  <p>It's built and in final testing ahead of its Google Play submission. This page will switch
+    to a Play Store link the moment it's live.</p>
+
+  <div class="cta-card cta-card--soon">
+    <h3>Coming soon</h3>
+    <p>This app is built and in final testing ahead of its Google Play submission.</p>
+    <a class="cta-btn" href="#">Coming soon to Google Play</a>
+  </div>
+
+  <p class="lede" style="font-size:13px;">
+    This app is a calculation tool for educational purposes. It does not provide financial,
+    investment or trading advice. Trading involves risk.
+  </p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">FuturesEdge</div>
+        <p class="footer-tagline">Focused tools for crypto, futures and forex traders.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#apps">Apps</a>
+        <a href="../prop-firm-rules/index.html">Prop Firm Rules</a>
+        <a href="../exchanges/index.html">Exchanges</a>
+        <a href="../guides/index.html">Guides</a>
+      </div>
+      <div class="footer-col">
+        <h4>Apps</h4>
+        <a href="../apps/trading-journal.html">Trading Journal</a>
+        <a href="../apps/prop-firm-tracker.html">Prop Firm Tracker</a>
+        <a href="../apps/position-size-calculator.html">Position Size Calculator</a>
+        <a href="../apps/compound-calculator.html">Compound Calculator</a>
+      </div>
+      <div class="footer-col">
+        <h4>More</h4>
+        <a href="https://www.etsy.com/au/shop/FuturesEdgeTrading" target="_blank" rel="noopener">Etsy Shop</a>
+        <a href="mailto:futuresedgetrade@gmail.com">Contact</a>
+      </div>
+    </div>
+    <p class="disclosure">
+      FuturesEdge builds independent trading tools and is not affiliated with, endorsed by, or
+      sponsored by any exchange or prop trading firm. Some links on this site are affiliate
+      links — FuturesEdge may earn a commission if you open an account or make a purchase
+      through them, at no extra cost to you. Nothing on this site is financial, investment or
+      trading advice. Trading involves risk of loss.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://powerfc.github.io/prop-firm-rules/sitemap.xml
+Sitemap: https://futuresedgetrade.app/sitemap.xml

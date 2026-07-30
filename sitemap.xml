@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://powerfc.github.io/prop-firm-rules/</loc><lastmod>2026-07-23</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/payout-denials.html</loc><lastmod>2026-07-23</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/</loc><lastmod>2026-07-30</lastmod></url>
 
-  <url><loc>https://powerfc.github.io/prop-firm-rules/firms/ftmo.html</loc><lastmod>2026-07-16</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/firms/topstep.html</loc><lastmod>2026-07-11</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/firms/apex.html</loc><lastmod>2026-07-11</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/firms/fundednext.html</loc><lastmod>2026-07-16</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/firms/fundingpips.html</loc><lastmod>2026-07-16</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/firms/the5ers.html</loc><lastmod>2026-07-16</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/firms/breakout.html</loc><lastmod>2026-07-15</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/firms/hyrotrader.html</loc><lastmod>2026-07-16</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/firms/bitfunded.html</loc><lastmod>2026-07-23</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/apps/trading-journal.html</loc><lastmod>2026-07-30</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/apps/prop-firm-tracker.html</loc><lastmod>2026-07-30</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/apps/position-size-calculator.html</loc><lastmod>2026-07-30</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/apps/compound-calculator.html</loc><lastmod>2026-07-30</lastmod></url>
 
-  <url><loc>https://powerfc.github.io/prop-firm-rules/compare/apex-vs-topstep.html</loc><lastmod>2026-07-11</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/compare/ftmo-vs-fundednext.html</loc><lastmod>2026-07-16</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/compare/breakout-vs-hyrotrader.html</loc><lastmod>2026-07-16</lastmod></url>
-  <url><loc>https://powerfc.github.io/prop-firm-rules/compare/ftmo-vs-the5ers.html</loc><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/index.html</loc><lastmod>2026-07-23</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/payout-denials.html</loc><lastmod>2026-07-23</lastmod></url>
+
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/firms/ftmo.html</loc><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/firms/topstep.html</loc><lastmod>2026-07-11</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/firms/apex.html</loc><lastmod>2026-07-11</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/firms/fundednext.html</loc><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/firms/fundingpips.html</loc><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/firms/the5ers.html</loc><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/firms/breakout.html</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/firms/hyrotrader.html</loc><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/firms/bitfunded.html</loc><lastmod>2026-07-23</lastmod></url>
+
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/compare/apex-vs-topstep.html</loc><lastmod>2026-07-11</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/compare/ftmo-vs-fundednext.html</loc><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/compare/breakout-vs-hyrotrader.html</loc><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/prop-firm-rules/compare/ftmo-vs-the5ers.html</loc><lastmod>2026-07-16</lastmod></url>
+
+  <url><loc>https://futuresedgetrade.app/exchanges/index.html</loc><lastmod>2026-07-30</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/exchanges/bitget.html</loc><lastmod>2026-07-30</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/exchanges/bybit.html</loc><lastmod>2026-07-30</lastmod></url>
+  <url><loc>https://futuresedgetrade.app/exchanges/bingx.html</loc><lastmod>2026-07-30</lastmod></url>
+
+  <url><loc>https://futuresedgetrade.app/guides/index.html</loc><lastmod>2026-07-30</lastmod></url>
 </urlset>
