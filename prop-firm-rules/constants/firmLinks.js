@@ -17,7 +17,7 @@ export const FIRM_LINKS = [
   { firm: 'FTMO', url: 'https://trader.ftmo.com/?affiliates=lvwSFjCqtgHnSODhKApb', affiliate: true, promo_note: '' },
   { firm: 'TopStep', url: 'https://topstep.com', affiliate: false, promo_note: '' },
   { firm: 'Apex Trader Funding', url: 'https://apextraderfunding.com', affiliate: false, promo_note: '' },
-  { firm: 'FundedNext', url: 'https://fundednext.com', affiliate: false, promo_note: '' },
+  { firm: 'FundedNext', url: 'https://fundednext.com?fpr=futuresedge', affiliate: true, promo_note: '' },
   { firm: 'FundingPips', url: 'https://app.fundingpips.com/register?referral_code=E029D261', affiliate: true, promo_note: '' },
   { firm: 'The5%ers', url: 'https://www.the5ers.com/?afmc=1drj', affiliate: true, promo_note: 'Use code BI4X for a discount' },
   { firm: 'Breakout', url: 'https://breakoutprop.com', affiliate: false, promo_note: '' },
