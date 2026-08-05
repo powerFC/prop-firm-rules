@@ -303,49 +303,43 @@ td.num, th.num { text-align: right; }
   border-color: var(--border); }
 .cta-card--soon .cta-btn { background: var(--border); color: var(--muted); pointer-events: none; }
 
-/* ── Guide landing page (no nav, single conversion goal) ────────────────── */
-.guide-hero { padding: 24px 20px 4px; }
-.guide-grid { max-width: 640px; margin: 0 auto; text-align: center; }
-.guide-brand { font-size: 15px; font-weight: 800; color: var(--muted); margin-bottom: 16px; }
-.guide-hero h1 { font-size: 26px; line-height: 1.22; margin: 0 0 10px; }
-.guide-hero .lede { font-size: 15px; margin: 0 auto 16px; max-width: 460px; }
-.guide-hero .feature-list { max-width: 440px; margin: 0 auto 20px; text-align: left; }
-
-.guide-col-right { margin-top: 20px; }
-
-.guide-cover {
-  display: block; width: 100%; max-width: 520px; height: auto;
-  margin: 0 auto 14px; border-radius: 12px; border: 1px solid var(--border);
+/* ── Guide landing page (no nav, single conversion goal) ──────────────────
+   One centred column at every width — desktop just gets more breathing
+   room via padding, not a different structure. */
+.guide-page { max-width: 620px; margin: 0 auto; padding: 48px 32px 56px; text-align: center; }
+@media (max-width: 480px) {
+  .guide-page { padding: 32px 20px 40px; }
 }
 
-/* Plain input block, not a second card — the Kit embed already carries its
-   own visual weight, so this stays unstyled beyond width constraint. */
-.guide-form-wrap { max-width: 520px; margin: 0 auto; }
+.guide-kicker {
+  font-size: 13px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 14px;
+}
+.guide-page h1 { font-size: 28px; line-height: 1.2; margin: 0 0 12px; }
+.guide-page > .lede { font-size: 15.5px; margin: 0 0 32px; }
+
+.guide-cover {
+  display: block; width: 100%; max-width: 100%; height: auto;
+  margin: 0 0 32px; border-radius: 12px; border: 1px solid var(--border);
+}
+
+.guide-page .guide-bullets { text-align: left; margin: 0 0 48px; }
+
+/* Plain input block, not a card — the Kit embed already carries its own
+   visual weight. It's the focal point, so it gets the most room. */
+.guide-form-wrap { margin: 0 0 12px; }
 .guide-form-wrap .formkit-header,
 .guide-form-wrap .formkit-subheader,
 .guide-form-wrap .seva-header,
 .guide-form-wrap .seva-subheader {
   display: none;
 }
-.guide-form-note { font-size: 12px; color: var(--muted); margin: 10px auto 0; max-width: 420px; }
+.guide-form-note { font-size: 12px; color: var(--muted); margin: 0 0 48px; }
 
-@media (min-width: 900px) {
-  .guide-grid {
-    max-width: 1080px;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 520px;
-    align-items: center;
-    gap: 56px;
-    text-align: left;
-  }
-  .guide-hero .lede,
-  .guide-hero .feature-list { margin-left: 0; margin-right: 0; }
-  .guide-col-right { margin-top: 0; }
-}
+.guide-below { text-align: left; margin: 0 0 32px; }
+.guide-below p { margin: 0 0 32px; }
+.guide-below .cta-card { margin: 0; }
 
-.guide-below {
-  max-width: 640px; margin: 28px auto 0; padding: 20px 20px 0; border-top: 1px solid var(--border);
-}
-.guide-footer { max-width: 640px; margin: 0 auto; padding: 16px 20px 28px; text-align: center; }
-.guide-footer .disclosure { margin: 0 auto; }
+.guide-footer { text-align: left; }
+.guide-footer .disclosure { margin: 0; }
 .guide-footer .disclosure a { color: var(--muted); text-decoration: underline; }
