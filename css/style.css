@@ -304,21 +304,48 @@ td.num, th.num { text-align: right; }
 .cta-card--soon .cta-btn { background: var(--border); color: var(--muted); pointer-events: none; }
 
 /* ── Guide landing page (no nav, single conversion goal) ────────────────── */
-.guide-hero { padding: 32px 20px 8px; max-width: 640px; margin: 0 auto; text-align: center; }
-.guide-brand { font-size: 15px; font-weight: 800; color: var(--muted); margin-bottom: 22px; }
-.guide-hero h1 { font-size: 27px; line-height: 1.25; margin: 0 0 12px; }
-.guide-hero .lede { font-size: 15.5px; margin: 0 auto 22px; max-width: 460px; }
-.guide-hero .feature-list { max-width: 440px; margin: 0 auto 26px; text-align: left; }
+.guide-hero { padding: 24px 20px 4px; }
+.guide-grid { max-width: 640px; margin: 0 auto; text-align: center; }
+.guide-brand { font-size: 15px; font-weight: 800; color: var(--muted); margin-bottom: 16px; }
+.guide-hero h1 { font-size: 26px; line-height: 1.22; margin: 0 0 10px; }
+.guide-hero .lede { font-size: 15px; margin: 0 auto 16px; max-width: 460px; }
+.guide-hero .feature-list { max-width: 440px; margin: 0 auto 20px; text-align: left; }
 
-.guide-form-wrap {
-  max-width: 420px; margin: 0 auto; background: #161f33; border: 1px solid var(--border);
-  border-radius: 16px; padding: 20px;
+.guide-col-right { margin-top: 20px; }
+
+.guide-cover {
+  display: block; width: 100%; max-width: 520px; height: auto;
+  margin: 0 auto 14px; border-radius: 12px; border: 1px solid var(--border);
 }
-.guide-form-note { font-size: 12px; color: var(--muted); margin: 14px auto 0; max-width: 420px; }
+
+/* Plain input block, not a second card — the Kit embed already carries its
+   own visual weight, so this stays unstyled beyond width constraint. */
+.guide-form-wrap { max-width: 520px; margin: 0 auto; }
+.guide-form-wrap .formkit-header,
+.guide-form-wrap .formkit-subheader,
+.guide-form-wrap .seva-header,
+.guide-form-wrap .seva-subheader {
+  display: none;
+}
+.guide-form-note { font-size: 12px; color: var(--muted); margin: 10px auto 0; max-width: 420px; }
+
+@media (min-width: 900px) {
+  .guide-grid {
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 520px;
+    align-items: center;
+    gap: 56px;
+    text-align: left;
+  }
+  .guide-hero .lede,
+  .guide-hero .feature-list { margin-left: 0; margin-right: 0; }
+  .guide-col-right { margin-top: 0; }
+}
 
 .guide-below {
-  max-width: 640px; margin: 40px auto 0; padding: 32px 20px 0; border-top: 1px solid var(--border);
+  max-width: 640px; margin: 28px auto 0; padding: 20px 20px 0; border-top: 1px solid var(--border);
 }
-.guide-footer { max-width: 640px; margin: 0 auto; padding: 24px 20px 44px; text-align: center; }
+.guide-footer { max-width: 640px; margin: 0 auto; padding: 16px 20px 28px; text-align: center; }
 .guide-footer .disclosure { margin: 0 auto; }
 .guide-footer .disclosure a { color: var(--muted); text-decoration: underline; }
