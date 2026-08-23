@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prop Firm Rules Dataset: Open, Verified, Machine-Readable (2026)</title>
+<meta name="description" content="A free, open dataset of prop trading firm evaluation rules — 9 firms, 29 plans, every entry read from the firm's own materials and carrying a verification date. JSON, CC BY 4.0.">
+<link rel="canonical" href="https://futuresedgetrade.app/prop-firm-rules/dataset/">
+<link rel="stylesheet" href="../../css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Prop Firm Rules Dataset",
+  "alternateName": "Proprietary Trading Firm Evaluation Rules Dataset",
+  "description": "An open, machine-readable dataset of proprietary trading firm evaluation rules covering 9 firms and 29 challenge plans across forex, futures and crypto. Each plan records profit targets, daily loss limit type and value, maximum drawdown mechanics, minimum trading days, time limits, consistency rules and trading restrictions, broken down by evaluation phase. Every entry was read directly from the firm's own rules page or help centre rather than from comparison sites, and carries its own verification date. The dataset distinguishes four drawdown types that most published comparisons collapse into a single percentage: static, end-of-day trailing, end-of-day trailing that locks at the starting balance, and intraday trailing on unrealised equity. It also separates four daily-loss variants: percentage of initial balance, percentage of prior day balance, trailing intraday high, and none. This distinction determines whether a trader passes or is breached, and is the main reason the dataset exists. The file is generated directly from a unit-tested rules engine rather than hand-maintained, so the published data cannot drift from the code it came from.",
+  "url": "https://futuresedgetrade.app/prop-firm-rules/dataset/",
+  "sameAs": "https://github.com/powerFC/propfirm-rules-dataset",
+  "identifier": "https://github.com/powerFC/propfirm-rules-dataset",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "version": "2.0",
+  "datePublished": "2026-08-07",
+  "dateModified": "2026-08-12",
+  "temporalCoverage": "2026-07-11/2026-07-23",
+  "inLanguage": "en",
+  "creator": {
+    "@type": "Organization",
+    "name": "FuturesEdge",
+    "url": "https://futuresedgetrade.app"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FuturesEdge",
+    "url": "https://futuresedgetrade.app"
+  },
+  "maintainer": {
+    "@type": "Organization",
+    "name": "FuturesEdge",
+    "url": "https://futuresedgetrade.app"
+  },
+  "keywords": [
+    "prop firm",
+    "proprietary trading",
+    "trading evaluation rules",
+    "drawdown",
+    "trailing drawdown",
+    "daily loss limit",
+    "profit target",
+    "consistency rule",
+    "funded trading",
+    "forex",
+    "futures",
+    "crypto trading"
+  ],
+  "measurementTechnique": "Manual reading of each firm's own published rules page, help centre or FAQ, recorded with a per-plan verification date. No figures are taken from third-party comparison or affiliate sites.",
+  "variableMeasured": [
+    { "@type": "PropertyValue", "name": "profit_target_pct", "description": "Profit target for the phase, as a percentage of the starting balance." },
+    { "@type": "PropertyValue", "name": "daily_loss", "description": "Daily loss limit, typed as pct_initial, pct_prior_day, trailing_intraday_high or none, with its value." },
+    { "@type": "PropertyValue", "name": "max_drawdown", "description": "Maximum drawdown, typed as static, eod_trail, eod_trail with locks_at, or intraday_trail, with its value and lock behaviour." },
+    { "@type": "PropertyValue", "name": "min_trading_days", "description": "Minimum number of trading days required to pass the phase." },
+    { "@type": "PropertyValue", "name": "time_limit_days", "description": "Maximum days allowed to complete the phase, where one applies." },
+    { "@type": "PropertyValue", "name": "consistency", "description": "Consistency or best-day rules limiting how much of the total profit may come from a single day." },
+    { "@type": "PropertyValue", "name": "restrictions", "description": "Trading restrictions such as news, weekend holding or expert advisor limits." },
+    { "@type": "PropertyValue", "name": "account_sizes_usd", "description": "Account sizes offered for the plan, in USD." },
+    { "@type": "PropertyValue", "name": "rules_verified", "description": "ISO date on which this plan's rules were last read from the firm's own materials." }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "prop-firm-rules.json",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/powerFC/propfirm-rules-dataset/main/data/prop-firm-rules.json"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "FuturesEdge Prop Firm Rules",
+    "url": "https://futuresedgetrade.app/prop-firm-rules/"
+  },
+  "citation": "Prop Firm Rules Dataset, FuturesEdge, https://futuresedgetrade.app/prop-firm-rules/dataset/ (CC BY 4.0)"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://futuresedgetrade.app/" },
+    { "@type": "ListItem", "position": 2, "name": "Prop Firm Rules", "item": "https://futuresedgetrade.app/prop-firm-rules/" },
+    { "@type": "ListItem", "position": 3, "name": "Dataset", "item": "https://futuresedgetrade.app/prop-firm-rules/dataset/" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">FuturesEdge</a>
+    <nav class="site-nav">
+      <a href="../../index.html">Home</a>
+      <a href="../../index.html#apps">Apps</a>
+      <a href="../../prop-firm-rules/index.html">Prop Firm Rules</a>
+      <a href="../../exchanges/index.html">Exchanges</a>
+      <a href="../../terminals/index.html">Terminals</a>
+      <a href="../../guides/index.html">Guides</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1>Prop Firm Rules Dataset</h1>
+
+  <p><strong>An open, machine-readable dataset of prop trading firm evaluation rules.
+  9 firms. 29 plans. Every entry read from the firm's own materials, with a verification date attached.</strong></p>
+
+  <p>Free to use, including commercially, under
+  <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> —
+  attribution with a link is the only condition.</p>
+
+  <p>
+    <a class="btn-primary" href="https://github.com/powerFC/propfirm-rules-dataset" rel="noopener" target="_blank">View on GitHub</a>
+    <a class="btn-secondary" href="https://raw.githubusercontent.com/powerFC/propfirm-rules-dataset/main/data/prop-firm-rules.json" rel="noopener" target="_blank">Download JSON</a>
+  </p>
+
+  <h2>Why it exists</h2>
+
+  <p>Most published prop firm comparisons are affiliate listicles built from each other. Numbers get copied
+  forward for years after a firm has changed them, and the single most important field — <em>what type of
+  drawdown the firm uses</em> — is usually reduced to a percentage with no mention of whether it trails,
+  when it trails, or what it trails on.</p>
+
+  <p>Two firms can both advertise "6% max drawdown" and be completely different products. This dataset
+  types that field properly:</p>
+
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>Drawdown type</th><th>What the floor follows</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>static</code></td><td>A fixed percentage of the starting balance. Never moves.</td></tr>
+      <tr><td><code>eod_trail</code></td><td>The highest end-of-day closed balance. Profit raises the floor overnight.</td></tr>
+      <tr><td><code>eod_trail</code> + <code>locks_at</code></td><td>Trails end-of-day, then freezes once the floor reaches the starting balance.</td></tr>
+      <tr><td><code>intraday_trail</code></td><td>The highest unrealised equity peak. An open trade that goes green then reverses can breach you with no losing closed trade.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>Daily loss limits are typed on a separate axis: <code>pct_initial</code>, <code>pct_prior_day</code>,
+  <code>trailing_intraday_high</code> and <code>none</code>.</p>
+
+  <h2>Coverage</h2>
+
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>Field</th><th>Value</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Firms</td><td>9 fully verified, plus 3 research-only and 1 defunct, kept for reference</td></tr>
+      <tr><td>Plans</td><td>29</td></tr>
+      <tr><td>Markets</td><td>Forex/CFD (13 plans), crypto (11), futures (5)</td></tr>
+      <tr><td>Firms covered</td><td>FTMO, TopStep, Apex Trader Funding, FundedNext, FundingPips, The5%ers, Breakout, HyroTrader, Bitfunded</td></tr>
+      <tr><td>Verification window</td><td>11–23 July 2026, per plan</td></tr>
+      <tr><td>Schema version</td><td>2.0</td></tr>
+      <tr><td>Format</td><td>Single JSON file</td></tr>
+      <tr><td>Licence</td><td>CC BY 4.0</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>How it's maintained</h2>
+
+  <p><strong>The file is generated, not hand-written.</strong> It's exported directly from the rules engine
+  behind the Prop Firm Challenge Tracker, which is covered by a unit test suite. The engine is the single
+  source of truth, so the published dataset cannot drift from the code that's tested against real challenges.</p>
+
+  <p>Every plan carries its own <code>rules_verified</code> date. Where a rule could not be confirmed from
+  the firm's own materials, the firm is listed under <code>research_only</code> rather than being published
+  as verified. Known gaps are documented in the repository.</p>
+
+  <h2>How to cite it</h2>
+
+  <p>Attribution with a link satisfies the licence. For example:</p>
+
+  <blockquote>
+    Data from the <a href="https://futuresedgetrade.app/prop-firm-rules/dataset/">Prop Firm Rules Dataset</a>
+    by FuturesEdge, CC BY 4.0.
+  </blockquote>
+
+  <p>If you're building a comparison tool, a video, an article or a spreadsheet from it, that's exactly what
+  it's for. No permission needed.</p>
+
+  <h2>Corrections</h2>
+
+  <p>If a firm has changed a rule, or something here is wrong, please
+  <a href="https://github.com/powerFC/propfirm-rules-dataset/issues" rel="noopener" target="_blank">open an issue</a>.
+  Corrections are made against the firm's own published materials only.</p>
+
+  <p><a href="../index.html">← Back to the prop firm rules comparison</a></p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">FuturesEdge</div>
+        <p class="footer-tagline">Focused tools for crypto, futures and forex traders.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html#apps">Apps</a>
+        <a href="../../prop-firm-rules/index.html">Prop Firm Rules</a>
+        <a href="../../exchanges/index.html">Exchanges</a>
+        <a href="../../terminals/index.html">Terminals</a>
+        <a href="../../guides/index.html">Guides</a>
+      </div>
+      <div class="footer-col">
+        <h4>Apps</h4>
+        <a href="../../apps/trading-journal.html">Trading Journal</a>
+        <a href="../../apps/prop-firm-tracker.html">Prop Firm Tracker</a>
+        <a href="../../apps/position-size-calculator.html">Position Size Calculator</a>
+        <a href="../../apps/compound-calculator.html">Compound Calculator</a>
+      </div>
+      <div class="footer-col">
+        <h4>More</h4>
+        <a href="https://www.etsy.com/au/shop/FuturesEdgeTrading" target="_blank" rel="noopener">Etsy Shop</a>
+        <a href="mailto:futuresedgetrade@gmail.com">Contact</a>
+      </div>
+    </div>
+    <p class="disclosure">Rules are summarised from each firm's official materials and verified on the dates shown.
+      Always confirm on the firm's own site before purchasing. This site may earn a commission
+      from some links. Not financial advice.</p>
+  </div>
+</footer>
+
+</body>
+</html>
