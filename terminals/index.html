@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Terminal vs Axiom vs Photon: Meme Coin Fees Compared (2026)</title>
-<meta name="description" content="What Solana meme coin terminals actually cost — Terminal (formerly Padre), Axiom, Photon and GMGN fees verified against each provider's own pages, plus the priority fee and slippage nobody counts. On a $20 position, priority fees alone add 2.58% to your break-even.">
+<meta name="description" content="What Solana meme coin terminals actually cost — Terminal (formerly Padre), Axiom, Photon and GMGN fees verified against each provider's own pages, plus the priority fee and slippage nobody counts. On a $20 position you need over 12% just to break even.">
 <link rel="canonical" href="https://futuresedgetrade.app/terminals/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Terminal vs Axiom vs Photon: Meme Coin Fees Compared (2026)">
@@ -34,7 +34,7 @@
       "name": "How much does Axiom charge per trade?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Axiom's published base trading fee is 1.0%, verified against Axiom's own fee page on 18 August 2026. That is charged on both the buy and the sell, so a round trip costs roughly 2% before priority fees and slippage are counted."
+        "text": "Axiom's published base trading fee is 1.0%, verified against Axiom's own fee page on 18 August 2026. That is charged on both the buy and the sell — but on a bonding-curve coin, pump.fun's own 1.25% is charged on top of Axiom's cut, so a round trip is closer to 4.5% than 2% before priority fees and slippage are counted."
       }
     },
     {
@@ -42,7 +42,7 @@
       "name": "What percentage do I need just to break even on a meme coin trade?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At a 1% buy fee, a 1% sell fee, 2% slippage and a $0.50 priority fee, a $100 position needs to gain 4.64% just to return your money. On a $20 position the same settings need 6.70%, because the fixed priority fee is a much larger share of a small trade."
+        "text": "At a 2.25% buy fee, a 2.25% sell fee, 2% slippage and a $1.00 priority fee, a $100 position needs to gain 7.83% just to return your money. On a $20 position the same settings need 12.01%, because the fixed priority fee is a much larger share of a small trade."
       }
     },
     {
@@ -50,7 +50,7 @@
       "name": "Why is my small meme coin position so much harder to break even on?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because the priority fee is a fixed dollar amount, not a percentage. A $0.50 priority fee adds 2.58 percentage points to the break-even on a $20 position, 0.52 points on a $100 position and 0.10 points on a $500 position. Percentage fees stay flat as size changes; the priority fee does not."
+        "text": "Because the priority fee is a fixed dollar amount, not a percentage. A $1.00 priority fee adds 5.22 percentage points to the break-even on a $20 position, 1.04 points on a $100 position and 0.21 points on a $500 position. Percentage fees stay flat as size changes; the priority fee does not."
       }
     }
   ]
@@ -184,51 +184,66 @@
 
   <h2>The headline fee is not what a trade costs you</h2>
   <p>
-    A 1% fee sounds like it costs 1%. It doesn't. You pay it on the way in and again on the way
-    out, you pay a priority fee to get the transaction landed, and you eat slippage on both
-    sides. Put those together and here is what a position actually has to gain before you have
-    your own money back — at a 1% buy fee, 1% sell fee, 2% slippage and a $0.50 priority fee:
+    A 1% fee sounds like it costs 1%. It doesn't — and it isn't 1%. On a low-cap coin you pay
+    pump.fun's 1.25% and the terminal's own cut on top, on the way in and again on the way out,
+    plus a priority fee to get the transaction landed, plus slippage on both sides. Here is what a
+    position actually has to gain before you have your own money back, at 2.25% per side, 2%
+    slippage and a $1.00 priority fee:
   </p>
   <div class="table-wrap">
     <table>
       <thead>
         <tr>
           <th>Position size</th>
-          <th>At 1.0% (what you pay at the time)</th>
-          <th>At 0.9% (Axiom discount)</th>
+          <th>At 2.25% per side</th>
+          <th>With Axiom's 10% off (2.15%/side)</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>$20</td><td>6.70%</td><td>6.49%</td></tr>
-        <tr><td>$50</td><td>5.15%</td><td>4.94%</td></tr>
-        <tr><td>$100</td><td>4.64%</td><td>4.43%</td></tr>
-        <tr><td>$250</td><td>4.33%</td><td>4.12%</td></tr>
-        <tr><td>$500</td><td>4.23%</td><td>4.02%</td></tr>
-        <tr><td>$1,000</td><td>4.18%</td><td>3.96%</td></tr>
+        <tr><td>$20</td><td>12.01%</td><td>11.79%</td></tr>
+        <tr><td>$50</td><td>8.88%</td><td>8.66%</td></tr>
+        <tr><td>$100</td><td>7.83%</td><td>7.62%</td></tr>
+        <tr><td>$250</td><td>7.21%</td><td>6.99%</td></tr>
+        <tr><td>$500</td><td>7.00%</td><td>6.78%</td></tr>
+        <tr><td>$1,000</td><td>6.89%</td><td>6.68%</td></tr>
       </tbody>
     </table>
   </div>
   <p>
+    <strong>We published lower numbers here until 24 August 2026, and they were wrong.</strong> The
+    earlier table assumed a flat 1% per side. pump.fun's own fee documentation and GMGN's own fee
+    documentation both confirm the fee is two fees stacked — the launchpad's and the interface's —
+    which roughly doubles the real cost. The corrected figures are worse for the trader and better
+    as an argument, which is why they're here.
+  </p>
+  <p>
     <strong>Cashback doesn't move these numbers, and that distinction matters.</strong> On Terminal
-    you pay the full 1% at the moment of the trade, so the middle column is your real break-even
+    you pay the full 2.25% at the moment of the trade, so the middle column is your real break-even
     on the day. The cashback lands later, in a separate balance, and only if you claim it. Over
-    time it lowers your effective cost to as little as 0.65% — a $100 position that would need
-    4.64% to clear its costs is closer to 3.90% once the cashback is counted — but that's a
-    running average across many trades, not the number the trade in front of you has to beat.
+    time it lowers your effective cost — at up to 35% back on the terminal's 1% portion, a $100
+    position needs roughly 7.48% rather than 7.83% — but that's a running average across many
+    trades, not the number the trade in front of you has to beat.
   </p>
 
   <h2>The finding most traders miss</h2>
   <p>
     Notice that the small positions are the expensive ones. That's the priority fee, and it's the
     single most underestimated cost in meme coin trading, because it is a <strong>fixed dollar
-    amount</strong> rather than a percentage. Holding everything else constant, a $0.50 priority
+    amount</strong> rather than a percentage. Holding everything else constant, a $1.00 priority
     fee adds:
   </p>
   <ul>
-    <li><strong>2.58 percentage points</strong> to the break-even on a $20 position</li>
-    <li><strong>0.52 points</strong> on a $100 position</li>
-    <li><strong>0.10 points</strong> on a $500 position</li>
+    <li><strong>5.22 percentage points</strong> to the break-even on a $20 position</li>
+    <li><strong>1.04 points</strong> on a $100 position</li>
+    <li><strong>0.21 points</strong> on a $500 position</li>
   </ul>
+  <p>
+    Priority is a choice, and the sources disagree. GMGN's own documentation suggests 0.002–0.005
+    SOL for an unhurried trade; traders sniping new pairs report around 0.016 SOL. On a $100
+    position that spread moves break-even by under a point. On a $20 position it moves it by
+    nearly six — from about 8.3% to about 14.6%. The smaller your position, the more the answer
+    depends on a fee most people never think about.
+  </p>
   <p>
     On that $20 trade, the priority fee is costing you more than both trading fees and slippage
     put together. Anyone aping small size into a lot of coins is paying a cost curve they've
@@ -277,16 +292,17 @@
   <h2>Frequently asked questions</h2>
   <h3>How much does Axiom charge per trade?</h3>
   <p>Axiom's published base trading fee is 1.0%, verified against Axiom's own fee page on 18 August
-    2026. It's charged on the buy and again on the sell, so a round trip costs roughly 2% before
+    2026. It's charged on the buy and again on the sell — but on a bonding-curve coin, pump.fun's
+    own 1.25% is charged on top of Axiom's cut, so a round trip is closer to 4.5% than 2% before
     priority fees and slippage.</p>
 
   <h3>What percentage do I need just to break even?</h3>
-  <p>At a 1% buy fee, 1% sell fee, 2% slippage and a $0.50 priority fee, a $100 position needs to
-    gain 4.64% to return your money. A $20 position needs 6.70% on identical settings.</p>
+  <p>At a 2.25% buy fee, 2.25% sell fee, 2% slippage and a $1.00 priority fee, a $100 position needs to
+    gain 7.83% to return your money. A $20 position needs 12.01% on identical settings.</p>
 
   <h3>Why is my small position so much harder to break even on?</h3>
   <p>The priority fee is a fixed dollar amount, not a percentage, so it's a far bigger share of a
-    small trade. It adds 2.58 percentage points to a $20 position's break-even and 0.10 points to
+    small trade. It adds 5.22 percentage points to a $20 position's break-even and 0.21 points to
     a $500 one.</p>
 
   <h3>Is Terminal the same thing as Padre?</h3>
