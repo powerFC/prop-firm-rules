@@ -18,7 +18,7 @@ export const FIRM_LINKS = [
   { firm: 'TopStep', url: 'https://topstep.com', affiliate: false, promo_note: '' },
   { firm: 'Apex Trader Funding', url: 'https://apextraderfunding.com', affiliate: false, promo_note: '' },
   { firm: 'FundedNext', url: 'https://fundednext.com', affiliate: false, promo_note: '' },
-  { firm: 'FundingPips', url: 'https://app.fundingpips.com/register?referral_code=E029D261', affiliate: true, promo_note: '' },
+  { firm: 'FundingPips', url: 'https://app.fundingpips.com/register?referral_code=E029D261', affiliate: true, promo_note: '5% off — applies automatically' },
   { firm: 'The5%ers', url: 'https://www.the5ers.com/?afmc=1drj', affiliate: true, promo_note: '5% off with code BI4X' },
   { firm: 'Breakout', url: 'https://breakoutprop.com', affiliate: false, promo_note: '' },
   { firm: 'HyroTrader', url: 'https://www.hyrotrader.com/?coupon=futuresedge', affiliate: true, promo_note: '5% off with code FUTURESEDGE — applies automatically' },
