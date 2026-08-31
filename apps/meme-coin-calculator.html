@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meme Coin Market Cap Calculator — MCap, Break-Even & Expectancy | FuturesEdge</title>
+<meta name="description" content="A free meme coin market cap calculator — mcap multiple, break-even after fees, hit-rate expectancy, a rug-tell reference and a private trade log. No wallet, no live data, works offline.">
+<link rel="canonical" href="https://futuresedgetrade.app/apps/meme-coin-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Meme Coin Market Cap Calculator — MCap, Break-Even & Expectancy">
+<meta property="og:description" content="Mcap multiple, break-even after fees, hit-rate expectancy, a rug-tell reference and a private trade log. Free, no wallet, works offline.">
+<meta property="og:url" content="https://futuresedgetrade.app/apps/meme-coin-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Meme Coin Trenches",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Android",
+  "url": "https://futuresedgetrade.app/apps/meme-coin-calculator.html",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.elitetrendhub.memecalc",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does the market cap multiple calculator actually compute?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You enter the market cap you bought at, your position size in USD, and a target market cap. It returns your position's value at that target, your profit or loss in dollars, the multiple, and the percentage change — updating live as you move the target slider." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the app connect to a wallet or track live prices?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. There's no wallet connection, no addresses, and no live token data of any kind — every number comes from what you type in, and every calculation happens on your device." }
+    },
+    {
+      "@type": "Question",
+      "name": "What counts as \"break-even\" in the fees calculator?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You enter your buy fee, sell fee and expected slippage as percentages. The calculator totals the real cost of the round trip and translates it into the market cap your position actually needs to reach before you're even — not the market cap you bought at." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I log a trade that went to zero?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — the trade log is built to capture losers, including full washouts, alongside winners. Hit rate and expectancy mean something when they come from your logged history rather than the trades you remember." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">FuturesEdge</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#apps">Apps</a>
+      <a href="../prop-firm-rules/index.html">Prop Firm Rules</a>
+      <a href="../exchanges/index.html">Exchanges</a>
+      <a href="../terminals/index.html">Terminals</a>
+      <a href="../guides/index.html">Guides</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="back-link" href="../index.html#apps">← All apps</a>
+  <h1>Meme Coin Market Cap Calculator</h1>
+  <p class="lede">
+    An mcap calculator built specifically for meme coin position math: what a target market cap
+    actually does to your position, what fees and slippage really cost you, and whether your
+    win rate and average winner add up to a positive expectancy at all. No wallet, no live
+    token data, no trading — just the calculations, on your device.
+  </p>
+
+  <div class="cta-card cta-card--app">
+    <h3>Get Meme Coin Trenches</h3>
+    <p>Free, with no account required.</p>
+    <a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.elitetrendhub.memecalc&referrer=utm_source%3Dwebsite%26utm_medium%3Dapp_page">Get it on Google Play →</a>
+  </div>
+
+  <h2>Why meme coin math needs its own calculator</h2>
+  <p>
+    A generic position calculator assumes numbers like "market cap" and "target price" behave
+    the way they do on a normal chart. Meme coin positions don't work that way — market caps
+    are quoted in shorthand, a target multiple means something different depending on the market
+    cap you actually bought at, and the fees and slippage on small, illiquid positions eat a
+    share of the trade that a spreadsheet built for stocks or futures never accounts for. This
+    app does that specific math, and only that math — no wallet, no live chart, no addresses,
+    nothing that touches an actual token.
+  </p>
+
+  <h2>What's inside</h2>
+  <ul class="feature-list">
+    <li>Market cap multiple <span>Enter the market cap you bought at, your position size in USD, and a target market cap (type it or drag the slider) — get position value at target, profit or loss in dollars, the multiple, and percentage change, all updating live. Shorthand like 40k, 40K, 40000 and 1.2m all parse correctly</span></li>
+    <li>Break-even after fees <span>Buy fee, sell fee and slippage as percentages, returning your total round-trip cost and the market cap your position needs to reach just to break even</span></li>
+    <li>Hit rate and expectancy <span>Enter your hit rate and average winner multiple to get your expectancy per trade and the break-even multiple your winners need to clear</span></li>
+    <li>Rug tells <span>A plain-English reference of mechanics worth checking before buying — written as patterns to recognise, not predictions about any specific token</span></li>
+    <li>Trade log <span>A local record of trades you've taken, including the ones that went to zero, so your hit rate comes from your actual history instead of memory</span></li>
+    <li>Private by design <span>Everything is calculated and stored on your device — no wallet, no addresses, no live token data, no account</span></li>
+  </ul>
+
+  <h2>What this app doesn't do</h2>
+  <p>
+    It doesn't connect to a wallet, doesn't read or generate addresses, doesn't pull live token
+    data, and doesn't place, route or recommend trades. Every figure it produces comes directly
+    from the numbers you type in, and none of it leaves your device. It's a calculator and a
+    private log — not a terminal, not a tracker, and not a signal.
+  </p>
+
+  <h2>Screenshots</h2>
+  <div class="screenshot-row">
+    <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Market cap multiple calculator with target slider and live profit/loss">
+    <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Break-even after fees screen showing total cost and break-even market cap">
+    <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Hit rate and expectancy calculator with break-even multiple">
+    <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Trade log listing past trades including losses">
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <h3>What does the market cap multiple calculator actually compute?</h3>
+  <p>You enter the market cap you bought at, your position size in USD, and a target market
+    cap. It returns your position's value at that target, your profit or loss in dollars, the
+    multiple, and the percentage change — updating live as you move the target slider.</p>
+
+  <h3>Does the app connect to a wallet or track live prices?</h3>
+  <p>No. There's no wallet connection, no addresses, and no live token data of any kind — every
+    number comes from what you type in, and every calculation happens on your device.</p>
+
+  <h3>What counts as "break-even" in the fees calculator?</h3>
+  <p>You enter your buy fee, sell fee and expected slippage as percentages. The calculator
+    totals the real cost of the round trip and translates it into the market cap your position
+    actually needs to reach before you're even — not the market cap you bought at.</p>
+
+  <h3>Can I log a trade that went to zero?</h3>
+  <p>Yes — the trade log is built to capture losers, including full washouts, alongside
+    winners. Hit rate and expectancy mean something when they come from your logged history
+    rather than the trades you remember.</p>
+
+  <div class="cta-card cta-card--app">
+    <h3>Get Meme Coin Trenches</h3>
+    <p>Free, with no account required.</p>
+    <a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.elitetrendhub.memecalc&referrer=utm_source%3Dwebsite%26utm_medium%3Dapp_page">Get it on Google Play →</a>
+  </div>
+
+  <p class="lede" style="font-size:13px;">
+    This app is a calculation and record-keeping tool for educational purposes. It does not
+    provide financial, investment or trading advice, and it is not a recommendation to buy or
+    sell any asset. Meme coin trading carries a high risk of total loss.
+  </p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">FuturesEdge</div>
+        <p class="footer-tagline">Focused tools for crypto, futures and forex traders.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#apps">Apps</a>
+        <a href="../prop-firm-rules/index.html">Prop Firm Rules</a>
+        <a href="../exchanges/index.html">Exchanges</a>
+        <a href="../terminals/index.html">Terminals</a>
+        <a href="../guides/index.html">Guides</a>
+      </div>
+      <div class="footer-col">
+        <h4>Apps</h4>
+        <a href="../apps/trading-journal.html">Trading Journal</a>
+        <a href="../apps/prop-firm-tracker.html">Prop Firm Tracker</a>
+        <a href="../apps/position-size-calculator.html">Position Size Calculator</a>
+        <a href="../apps/compound-calculator.html">Prop Firm Calculator</a>
+        <a href="../apps/meme-coin-calculator.html">Meme Coin Trenches</a>
+      </div>
+      <div class="footer-col">
+        <h4>More</h4>
+        <a href="https://www.etsy.com/au/shop/FuturesEdgeTrading" target="_blank" rel="noopener">Etsy Shop</a>
+        <a href="mailto:futuresedgetrade@gmail.com">Contact</a>
+      </div>
+    </div>
+    <p class="disclosure">
+      FuturesEdge builds independent trading tools and is not affiliated with, endorsed by, or
+      sponsored by any exchange or prop trading firm. Some links on this site are affiliate
+      links — FuturesEdge may earn a commission if you open an account or make a purchase
+      through them, at no extra cost to you. Nothing on this site is financial, investment or
+      trading advice. Trading involves risk of loss.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
