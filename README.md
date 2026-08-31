@@ -11,7 +11,7 @@ comparison, published via GitHub Pages with a custom domain (see `CNAME`).
 /apps/trading-journal.html         App landing page (SEO)
 /apps/prop-firm-tracker.html       App landing page (SEO)
 /apps/position-size-calculator.html App landing page (SEO)
-/apps/compound-calculator.html     App landing page (SEO) — app not yet live
+/apps/compound-calculator.html     App landing page (SEO) — Prop Firm Calculator, live
 /prop-firm-rules/                  Verified prop-firm rules database (see below)
 /exchanges/index.html              Exchange comparison (fees, leverage, markets)
 /exchanges/{bitget,bybit,bingx}.html One page per exchange, with its referral link

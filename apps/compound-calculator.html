@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Compound Growth and Risk of Ruin Calculator | FuturesEdge</title>
-<meta name="description" content="Project compound growth and calculate your real risk of ruin side by side — a free calculator for traders, coming soon to Google Play from FuturesEdge.">
+<title>Prop Firm Calculator — Growth, Risk of Ruin, EV and Survival Simulator | FuturesEdge</title>
+<meta name="description" content="Prop Firm Calculator: four free-to-start tools for prop firm traders — compound growth, risk of ruin, an evaluation EV calculator, and a Monte Carlo Survival Simulator. Live on Google Play.">
 <link rel="canonical" href="https://futuresedgetrade.app/apps/compound-calculator.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Compound Growth and Risk of Ruin Calculator">
-<meta property="og:description" content="Project compound growth and see your real risk of ruin, side by side. Coming soon to Google Play.">
+<meta property="og:title" content="Prop Firm Calculator — Growth, Risk of Ruin, EV and Survival Simulator">
+<meta property="og:description" content="Four tools for prop firm traders: compound growth, risk of ruin, evaluation EV, and a Monte Carlo Survival Simulator. Live on Google Play.">
 <meta property="og:url" content="https://futuresedgetrade.app/apps/compound-calculator.html">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../css/style.css">
@@ -16,10 +16,12 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "Compound Growth & Risk Calculator",
+  "name": "Prop Firm Calculator",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Android",
-  "url": "https://futuresedgetrade.app/apps/compound-calculator.html"
+  "url": "https://futuresedgetrade.app/apps/compound-calculator.html",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.elitetrendhub.compound",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }
 </script>
 <script type="application/ld+json">
@@ -30,22 +32,22 @@
     {
       "@type": "Question",
       "name": "Is the risk of ruin number an exact simulation?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No — it's the classical closed-form gambler's-ruin approximation, treating fixed-fractional risk as a fixed number of equal capital units, rather than a full Monte Carlo simulation. Real risk of ruin with compounding position sizing and a stopping rule is generally lower than this approximation." }
+      "acceptedAnswer": { "@type": "Answer", "text": "The Risk of Ruin card uses the classical closed-form gambler's-ruin approximation, treating fixed-fractional risk as a fixed number of equal capital units, rather than a full Monte Carlo simulation. The Survival Simulator, by contrast, runs a full Monte Carlo engine against a specific firm's drawdown rules." }
     },
     {
       "@type": "Question",
-      "name": "What counts as \"ruin\" in the calculator?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A drawdown threshold you choose yourself — for example 50% — not necessarily a complete loss of capital. You set the win rate, risk per trade, average reward-to-risk and the ruin threshold, and the app calculates the probability of hitting it." }
+      "name": "What does the Survival Simulator actually simulate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It runs thousands of simulated challenge attempts using your win rate and risk per trade against a specific prop firm's drawdown rules, then reports your pass rate, breach rate, and where in the attempt failures typically happen." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the EV Calculator tell you that a pass rate doesn't?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Given an evaluation's cost, pass rate, payout chance and payout size, it works out your average cost to get funded, the expected value per evaluation, your return multiple, and how many accounts you'd need to hit a target monthly payout." }
     },
     {
       "@type": "Question",
       "name": "Does the app store my numbers anywhere?",
       "acceptedAnswer": { "@type": "Answer", "text": "No. All calculations stay on your device — no account, no cloud, no data collected." }
-    },
-    {
-      "@type": "Question",
-      "name": "When will this app be available?",
-      "acceptedAnswer": { "@type": "Answer", "text": "It's built and in final testing ahead of its Google Play submission. This page will switch to a Play Store link the moment it's live." }
     }
   ]
 }
@@ -69,82 +71,88 @@
 
 <main class="wrap">
   <a class="back-link" href="../index.html#apps">← All apps</a>
-  <h1>Compound Growth and Risk of Ruin Calculator</h1>
+  <h1>Prop Firm Calculator</h1>
   <p class="lede">
-    Two calculators, one screen: project what steady compounding actually does to a balance
-    over time, then check the number that dream projection doesn't show you — the real
-    probability that your risk-per-trade and win rate lead to ruin, not riches.
+    Four independent tools for anyone running a prop firm evaluation: project what steady
+    compounding does to a balance, check your real risk of ruin, work out the expected value
+    of an evaluation before you pay for it, and run a Monte Carlo simulation of your odds
+    against a specific firm's drawdown rules.
   </p>
 
-  <div class="cta-card cta-card--soon">
-    <h3>Coming soon</h3>
-    <p>This app is built and in final testing ahead of its Google Play submission.</p>
-    <a class="cta-btn" href="#">Coming soon to Google Play</a>
+  <div class="cta-card cta-card--app">
+    <h3>Get Prop Firm Calculator</h3>
+    <p>Compound Growth, Risk of Ruin and the EV Calculator are free. A one-time purchase unlocks the Survival Simulator.</p>
+    <a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.elitetrendhub.compound&referrer=utm_source%3Dwebsite%26utm_medium%3Dapp_page">Get it on Google Play →</a>
   </div>
 
-  <h2>Why growth and risk belong on the same screen</h2>
+  <h2>Why growth, risk, EV and survival belong on the same screen</h2>
   <p>
     Compound growth calculators are everywhere, and they're seductive for a reason — a modest
     per-period gain, compounded for a year, produces a chart that climbs into numbers that feel
-    inevitable. What most of those calculators leave out is the other half of the same math:
-    the same aggressive risk-per-trade that makes the growth curve steep is very often the exact
-    setting that makes ruin likely, not unlikely. This calculator puts both numbers in front of
-    you at once, so a growth projection can't be read without also seeing what it implies about
-    your risk of blowing up trying to get there.
+    inevitable. What most of those calculators leave out is the other half of the same math: the
+    same aggressive risk-per-trade that makes the growth curve steep is very often the exact
+    setting that makes ruin likely, not unlikely. Prop Firm Calculator puts growth and risk in
+    front of you at once, then goes further — before you pay for an evaluation, the EV
+    Calculator tells you whether the pass rate and payout on offer are actually worth the entry
+    fee, and the Survival Simulator runs your specific numbers against a specific firm's
+    drawdown rules thousands of times to show you the real odds, not a marketing pass rate.
   </p>
 
   <h2>What's inside</h2>
   <ul class="feature-list">
-    <li>Compound growth projector <span>Starting balance, gain per period, and a period unit of day, week or month, projected up to 520 periods — with final balance, total return and total gain</span></li>
-    <li>Growth curve chart <span>Linear or log scale, with the chart automatically defaulting to log once growth passes 20×, so the curve stays readable at any scale</span></li>
-    <li>Milestone markers <span>See exactly which period your balance crosses 2×, 5× and 10× your starting balance</span></li>
-    <li>Share your projection <span>One tap to share your starting balance, gain rate and projected result</span></li>
-    <li>Risk of ruin calculator <span>Win rate, risk per trade, average reward-to-risk and a ruin threshold you set, producing a risk-of-ruin percentage, expectancy in R, and a realistic longest losing streak</span></li>
-    <li>Plain-English verdict <span>A one-line read on whether your inputs describe a sustainable risk profile or a coin flip</span></li>
+    <li>Compound growth projector <span>Starting balance, gain per period, and a period unit of day, week or month, projected up to 520 periods — with final balance, total return and total gain, a growth curve chart that auto-switches to log scale past 20×, and milestone markers for 2×, 5× and 10×</span></li>
+    <li>Risk of Ruin <span>Win rate, risk per trade, average reward-to-risk and a ruin threshold you set, producing a risk-of-ruin percentage, expectancy in R, a realistic longest losing streak, and a plain-English verdict on whether your inputs describe a sustainable risk profile or a coin flip</span></li>
+    <li>Prop Firm EV Calculator <span>Evaluation cost, pass rate, payout chance and payout size in, average cost to funded, expected value per evaluation, return multiple, and accounts needed for a target monthly payout out</span></li>
+    <li>Survival Simulator <span>A Monte Carlo engine running thousands of simulated challenge attempts against your win rate, risk per trade and a specific firm's drawdown rules — reporting pass rate, breach rate, and where in the attempt failure typically occurs</span></li>
+    <li>Share your results <span>One tap to share a growth projection or a simulator result</span></li>
     <li>Private by design <span>All calculations stay on your device — no account, no data collected</span></li>
   </ul>
 
-  <h2>How the risk of ruin is calculated</h2>
+  <h2>How the Risk of Ruin card differs from the Survival Simulator</h2>
   <p>
-    This isn't a full trade-by-trade simulation — it's the classical closed-form gambler's-ruin
-    result, applied by approximating fixed-fractional risk (a percentage of a balance that
-    itself grows and shrinks trade to trade) as a fixed number of equal capital units. It's a
-    well-established approximation, not a guess, and it comes with an honest caveat: real risk
-    of ruin, once you account for position sizing that compounds and a sensible stopping rule
-    instead of trading forever, is generally lower than what this calculator shows. Treat the
-    number as a conservative upper bound on your risk, not a precise forecast.
+    Risk of Ruin isn't a trade-by-trade simulation — it's the classical closed-form
+    gambler's-ruin result, applied by approximating fixed-fractional risk (a percentage of a
+    balance that itself grows and shrinks trade to trade) as a fixed number of equal capital
+    units. It's a well-established approximation, not a guess, and it comes with an honest
+    caveat: real risk of ruin, once you account for position sizing that compounds and a
+    sensible stopping rule instead of trading forever, is generally lower than what this card
+    shows. The Survival Simulator is the more precise tool for a specific prop firm challenge —
+    it runs a full Monte Carlo simulation against that firm's actual drawdown mechanics rather
+    than a general approximation.
   </p>
 
   <h2>Screenshots</h2>
   <div class="screenshot-row">
     <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Compound growth chart with milestone markers at 2x, 5x and 10x">
     <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Risk of ruin card showing risk percentage, expectancy and losing streak">
-    <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Growth inputs screen with starting balance and gain per period">
+    <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Prop Firm EV Calculator showing cost to funded and expected value">
+    <img class="screenshot-placeholder" src="../assets/screenshot-placeholder.svg" alt="Survival Simulator results showing pass rate and breach rate">
   </div>
 
   <h2>Frequently asked questions</h2>
   <h3>Is the risk of ruin number an exact simulation?</h3>
-  <p>No — it's the classical closed-form gambler's-ruin approximation, treating fixed-fractional
-    risk as a fixed number of equal capital units, rather than a full Monte Carlo simulation.
-    Real risk of ruin with compounding position sizing and a stopping rule is generally lower
-    than this approximation.</p>
+  <p>The Risk of Ruin card uses the classical closed-form gambler's-ruin approximation, treating
+    fixed-fractional risk as a fixed number of equal capital units, rather than a full Monte
+    Carlo simulation. The Survival Simulator, by contrast, runs a full Monte Carlo engine
+    against a specific firm's drawdown rules.</p>
 
-  <h3>What counts as "ruin" in the calculator?</h3>
-  <p>A drawdown threshold you choose yourself — for example 50% — not necessarily a complete
-    loss of capital. You set the win rate, risk per trade, average reward-to-risk and the ruin
-    threshold, and the app calculates the probability of hitting it.</p>
+  <h3>What does the Survival Simulator actually simulate?</h3>
+  <p>It runs thousands of simulated challenge attempts using your win rate and risk per trade
+    against a specific prop firm's drawdown rules, then reports your pass rate, breach rate, and
+    where in the attempt failures typically happen.</p>
+
+  <h3>What does the EV Calculator tell you that a pass rate doesn't?</h3>
+  <p>Given an evaluation's cost, pass rate, payout chance and payout size, it works out your
+    average cost to get funded, the expected value per evaluation, your return multiple, and how
+    many accounts you'd need to hit a target monthly payout.</p>
 
   <h3>Does the app store my numbers anywhere?</h3>
   <p>No. All calculations stay on your device — no account, no cloud, no data collected.</p>
 
-  <h3>When will this app be available?</h3>
-  <p>It's built and in final testing ahead of its Google Play submission. This page will switch
-    to a Play Store link the moment it's live.</p>
-
-  <div class="cta-card cta-card--soon">
-    <h3>Coming soon</h3>
-    <p>This app is built and in final testing ahead of its Google Play submission.</p>
-    <a class="cta-btn" href="#">Coming soon to Google Play</a>
+  <div class="cta-card cta-card--app">
+    <h3>Get Prop Firm Calculator</h3>
+    <p>Compound Growth, Risk of Ruin and the EV Calculator are free. A one-time purchase unlocks the Survival Simulator.</p>
+    <a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.elitetrendhub.compound&referrer=utm_source%3Dwebsite%26utm_medium%3Dapp_page">Get it on Google Play →</a>
   </div>
 
   <p class="lede" style="font-size:13px;">
@@ -174,7 +182,7 @@
         <a href="../apps/trading-journal.html">Trading Journal</a>
         <a href="../apps/prop-firm-tracker.html">Prop Firm Tracker</a>
         <a href="../apps/position-size-calculator.html">Position Size Calculator</a>
-        <a href="../apps/compound-calculator.html">Compound Calculator</a>
+        <a href="../apps/compound-calculator.html">Prop Firm Calculator</a>
       </div>
       <div class="footer-col">
         <h4>More</h4>
