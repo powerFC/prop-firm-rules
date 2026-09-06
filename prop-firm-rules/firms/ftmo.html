@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FTMO Rules 2026: Drawdown, Daily Loss &amp; Profit Targets Explained</title>
-<meta name="description" content="FTMO's 2-Step and 1-Step Evaluation rules for 2026, verified 2026-07-16: max drawdown type, daily loss limits, profit targets, minimum trading days and the Best Day consistency rule, explained plainly.">
+<meta name="description" content="FTMO's 2-Step and 1-Step Evaluation rules for 2026, verified 2026-08-29: max drawdown type, daily loss limits, profit targets, minimum trading days and the Best Day consistency rule, explained plainly.">
 <link rel="canonical" href="https://futuresedgetrade.app/prop-firm-rules/firms/ftmo.html">
 <link rel="stylesheet" href="../../css/style.css">
 <script type="application/ld+json">
@@ -13,7 +13,7 @@
   "@type": "Article",
   "headline": "FTMO Rules 2026: Drawdown, Daily Loss & Profit Targets Explained",
   "datePublished": "2026-07-16",
-  "dateModified": "2026-07-16",
+  "dateModified": "2026-08-29",
   "author": { "@type": "Organization", "name": "Prop Firm Rules" },
   "publisher": { "@type": "Organization", "name": "Prop Firm Rules" },
   "mainEntityOfPage": "https://futuresedgetrade.app/prop-firm-rules/firms/ftmo.html"
@@ -29,7 +29,7 @@
       "name": "Is FTMO's max drawdown static or trailing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "On the 2-Step Evaluation it's static — a fixed 10% of your starting balance that never moves, on both Phase 1 and Phase 2. On the 1-Step Evaluation, our data encodes it as end-of-day trailing based on secondary sources, since FTMO's official rules table doesn't explicitly confirm this detail — treat the floor conservatively until you've confirmed it directly at ftmo.com."
+        "text": "Trailing, on both plans. FTMO recalculates the maximum loss limit daily from the highest account balance at 00:00 on any preceding trading day, and in FTMO's words the limit \"can only increase, but never decrease\". On a $100,000 account your floor starts at $90,000, but if you close a day at $105,000 the floor moves permanently to $95,000. This applies to both phases of the 2-Step Evaluation and to the 1-Step."
       }
     },
     {
@@ -71,7 +71,7 @@
 <main class="wrap">
   <a class="back-link" href="../index.html">← All firms</a>
   <h1>FTMO Rules Explained (2026)</h1>
-  <div class="verified">✓ Rules verified 2026-07-16</div>
+  <div class="verified">✓ Rules verified 2026-08-29</div>
 
   <p class="lede">
     FTMO runs a forex/CFD evaluation with two paths: the long-standing 2-Step Evaluation, and a
@@ -100,41 +100,27 @@
         <tr>
           <td rowspan="2">2-Step Evaluation</td>
           <td>Phase 1</td><td>10%</td><td>5% fixed (of starting balance)</td>
-          <td>Static, 10%</td><td>4</td><td>None</td>
+          <td>End-of-day trailing, 10%</td><td>4</td><td>None</td>
         </tr>
         <tr>
           <td>Phase 2</td><td>5%</td><td>5% fixed</td>
-          <td>Static, 10%</td><td>4</td><td>None</td>
+          <td>End-of-day trailing, 10%</td><td>4</td><td>None</td>
         </tr>
         <tr>
           <td>1-Step Evaluation</td>
           <td>Single phase</td><td>10%</td><td>3% fixed</td>
-          <td>End-of-day trailing, 10%*</td><td>0</td><td>Best day ≤ 50% of positive-days profit</td>
+          <td>End-of-day trailing, 10%</td><td>0</td><td>Best day ≤ 50% of positive-days profit</td>
         </tr>
       </tbody>
     </table>
   </div>
-  <p><em>* See "Notes &amp; unconfirmed details" below — the 1-Step's drawdown type isn't officially confirmed by FTMO.</em></p>
   <p>Account sizes on both plans: $10,000 / $25,000 / $50,000 / $100,000 / $200,000.</p>
 
   <h2>How FTMO's drawdown works</h2>
-  <p>
-    <strong>2-Step Evaluation:</strong> the max drawdown is <strong>static</strong> — FTMO
-    calculates 10% of your starting balance once, and that dollar floor never moves for the
-    rest of the evaluation, no matter how much you're up. This is the simplest drawdown
-    mechanic to plan around: your floor on a $100,000 account is $90,000, full stop.
-  </p>
-  <p>
-    <strong>1-Step Evaluation:</strong> our data models this as <strong>end-of-day trailing</strong>
-    — the floor rises with each new end-of-day closing-balance high, tracking 10% below your
-    peak balance rather than your starting balance. Unlike TopStep or Breakout's 2-Step, we
-    have no confirmation that this floor locks once you're sufficiently profitable — so plan
-    around a floor that can keep rising indefinitely as your balance grows.
-  </p>
+  <p><strong>Both plans use an end-of-day trailing floor.</strong> FTMO recalculates your maximum loss limit at 00:00 CE(S)T each day, measured from the highest balance recorded at 00:00 on any preceding trading day — or your initial capital, whichever is higher. In FTMO's own words the limit "can only increase, but never decrease". On a $100,000 account the floor starts at $90,000. Close one day at $105,000 and the floor moves permanently to $95,000, even if you give the profit back. This is the mechanic most often assumed to work the other way, and it applies to both phases of the 2-Step as well as the funded FTMO Account.</p>
 
   <h2>Notes &amp; unconfirmed details</h2>
   <ul class="notes-list">
-    <li>The 1-Step Evaluation's drawdown type (static vs. trailing) is not confirmed on FTMO's official rules table — it's encoded here as end-of-day trailing based on secondary sources. Confirm directly at ftmo.com before relying on it.</li>
     <li>The 1-Step Evaluation's fee is non-refundable, unlike the 2-Step's (which is refunded on a pass).</li>
   </ul>
 
@@ -146,11 +132,11 @@
 
   <h2>Frequently asked questions</h2>
   <h3>Is FTMO's max drawdown static or trailing?</h3>
-  <p>On the 2-Step Evaluation it's static — a fixed 10% of your starting balance that never
-    moves, on both Phase 1 and Phase 2. On the 1-Step Evaluation, our data encodes it as
-    end-of-day trailing based on secondary sources, since FTMO's official rules table doesn't
-    explicitly confirm this detail — treat the floor conservatively until you've confirmed it
-    directly at ftmo.com.</p>
+  <p>Trailing, on both plans. FTMO recalculates the maximum loss limit daily from the highest
+    account balance at 00:00 on any preceding trading day, and in FTMO's words the limit "can
+    only increase, but never decrease". On a $100,000 account your floor starts at $90,000, but
+    if you close a day at $105,000 the floor moves permanently to $95,000. This applies to both
+    phases of the 2-Step Evaluation and to the 1-Step.</p>
 
   <h3>Does FTMO have a consistency rule?</h3>
   <p>Not on the 2-Step Evaluation. The 1-Step Evaluation has a Best Day Rule: your single best
