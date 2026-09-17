@@ -1,4 +1,6 @@
 .claude/
+.codex/
+.Codex/
 .DS_Store
 *.local.json
 node_modules/

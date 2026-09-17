@@ -1,0 +1,89 @@
+/* Homepage composition; article typography stays in style.css. */
+.home-page { background: radial-gradient(ellipse at 80% 7%, #1c2548 0, transparent 32%), var(--bg); }
+.home-page .wrap { max-width: 1160px; }
+.home-page .site-header { margin-bottom: 0; }
+.home-hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 36px; align-items: center; padding: 72px 0 50px; }
+.eyebrow { color: #a7b0ff; text-transform: uppercase; letter-spacing: .15em; font-size: 11px; font-weight: 800; margin-bottom: 18px; }
+.home-hero h1 { font-size: clamp(36px, 4.8vw, 60px); line-height: 1.08; letter-spacing: -.045em; margin-bottom: 24px; }
+.home-hero h1 span { color: #a3abff; }
+.hero-summary { font-size: 18px; line-height: 1.7; max-width: 470px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 18px; }
+.hero-detail { font-size: 12px; color: #a5b3ca; }
+.hero-preview { position: relative; min-height: 540px; }
+.preview-phone { position: absolute; width: 225px; margin: 0; border: 5px solid #29354d; border-radius: 26px; overflow: hidden; background: #111827; box-shadow: 0 30px 70px #0006; }
+.preview-phone img { display: block; width: 100%; height: 427px; object-fit: cover; object-position: top; }
+.preview-phone figcaption { font-size: 10px; text-align: center; padding: 11px 5px; color: #c5cfe1; }
+.preview-phone--back { left: 0; top: 14px; transform: rotate(-7deg); }
+.preview-phone--front { right: 0; top: 42px; transform: rotate(6deg); }
+.preview-caption { position: absolute; bottom: 0; left: 0; right: 0; text-align: center; font-size: 10px; margin: 0; }
+.pathways { display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid #2d3850; border-bottom: 1px solid #2d3850; }
+.pathways a { padding: 25px 22px; color: var(--text); }
+.pathways a:first-child { padding-left: 0; }
+.pathways a + a { border-left: 1px solid #2d3850; }
+.pathways a:hover { text-decoration: none; background: #818cf80a; }
+.pathways span, .pathways strong, .pathways small { display: block; }
+.pathways span { font-size: 10px; letter-spacing: .12em; color: #a7b0ff; margin-bottom: 10px; }
+.pathways strong { font-size: 19px; margin-bottom: 6px; }
+.pathways small { font-size: 12px; color: #a5b3ca; }
+.home-section { padding-top: 76px; }
+.section-heading { display: flex; gap: 28px; justify-content: space-between; align-items: end; margin-bottom: 27px; }
+.home-page h2 { border: 0; padding: 0; margin: 0; font-size: clamp(26px,3vw,36px); line-height: 1.2; letter-spacing: -.025em; }
+.section-heading > p { max-width: 300px; font-size: 14px; margin-bottom: 0; }
+.section-heading .eyebrow { margin-bottom: 12px; }
+.app-collection { display: grid; grid-template-columns: repeat(6,1fr); gap: 16px; }
+.app-tile { grid-column: span 2; display: flex; flex-direction: column; padding: 26px; border: 1px solid #28344b; border-radius: 18px; background: linear-gradient(140deg,#172039,#101827); }
+.app-tile:nth-child(-n+2) { grid-column: span 3; }
+.product-icon { width: 56px; height: 56px; border-radius: 13px; margin-bottom: 24px; }
+.product-name { color: #b8c4dc; font-size: 12px; margin-bottom: 9px; }
+.app-tile h3 { font-size: 23px; letter-spacing: -.02em; line-height: 1.25; margin: 0 0 12px; }
+.app-tile > p:not(.product-name) { font-size: 14px; flex: 1; }
+.app-tile .card-link { margin-top: 14px; padding-top: 17px; border-top: 1px solid #2c3750; display: flex; justify-content: space-between; }
+.card-link { font-size: 13px; font-weight: 700; color: #acb4ff; }
+.comparison-collection { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.comparison-card { display: flex; flex-direction: column; padding: 26px; border: 1px solid #2b4050; border-radius: 18px; background: linear-gradient(135deg,#152a30,#111a2e); }
+.comparison-card:hover { text-decoration: none; border-color: #79bcae; }
+.comparison-card .eyebrow { color: #8cddc9; margin: 0; }
+.comparison-card h3 { font-size: 23px; line-height: 1.3; margin: 20px 0 14px; }
+.comparison-card p { font-size: 14px; flex: 1; }
+.comparison-card .card-link { color: #8cddc9; margin-top: 15px; }
+.indicator-feature { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding: 42px; margin-top: 76px; border: 1px solid #363b60; border-radius: 22px; background: radial-gradient(ellipse at 100% 0,#30234d,transparent 75%), #141b2c; }
+.indicator-feature h2 { margin-bottom: 20px; }
+.indicator-feature p { font-size: 14px; }
+.indicator-feature .btn-secondary { margin-top: 12px; }
+.indicator-detail { border-left: 1px solid #4b4164; padding-left: 38px; align-self: center; }
+.indicator-detail .tag { font-size: 11px; color: #ceb4ed; text-transform: uppercase; letter-spacing: .1em; }
+.indicator-artwork { display: block; margin-bottom: 24px; }
+.indicator-artwork img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #363b60; }
+.indicator-detail h3 { font-size: 36px; margin: 14px 0 8px; }
+.indicator-detail .indicator-subtitle { color: var(--text); font-size: 17px; }
+.indicator-detail .btn-primary { margin-top: 10px; }
+.why-section .why-grid { margin-top: 30px; }
+.why-section h3 { margin-top: 0; }
+@media(max-width:900px) {
+ .home-hero { gap: 18px; }
+ .hero-preview { min-height: 460px; }
+ .preview-phone { width: 180px; }
+ .preview-phone img { height: 350px; }
+ .pathways a { padding: 20px 14px; }
+ .pathways strong { font-size: 16px; }
+}
+@media(max-width:680px) {
+ .home-hero { grid-template-columns: 1fr; padding-top: 38px; }
+ .hero-copy { max-width: 540px; }
+ .home-hero h1 { font-size: 43px; }
+ .hero-summary { font-size: 16px; }
+ .hero-preview { width: min(100%,390px); margin: 8px auto 12px; min-height: 445px; }
+ .preview-phone--back { left: 12px; }
+ .preview-phone--front { right: 12px; }
+ .pathways { grid-template-columns: 1fr; }
+ .pathways a, .pathways a:first-child { padding: 20px 12px; }
+ .pathways a+a { border-left: 0; border-top: 1px solid #2d3850; }
+ .section-heading { display: block; }
+ .section-heading > p { max-width: none; margin-top: 15px; }
+ .app-collection, .comparison-collection, .indicator-feature { grid-template-columns: 1fr; }
+ .app-tile, .app-tile:nth-child(-n+2) { grid-column: auto; }
+ .home-section { padding-top: 48px; }
+ .indicator-feature { margin-top: 48px; padding: 26px; gap: 30px; }
+ .indicator-detail { padding: 25px 0 0; border-left: 0; border-top: 1px solid #4b4164; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } }

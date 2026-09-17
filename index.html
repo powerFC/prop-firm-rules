@@ -12,6 +12,7 @@
 <meta property="og:url" content="https://futuresedgetrade.app/">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -32,7 +33,7 @@
 }
 </script>
 </head>
-<body>
+<body class="home-page">
 
 <header class="site-header">
   <div class="wrap">
@@ -40,7 +41,7 @@
     <nav class="site-nav">
       <a href="index.html">Home</a>
       <a href="index.html#apps">Apps</a>
-      <a href="index.html#indicators">Indicator</a>
+      <a href="index.html#indicators">Indicators</a>
       <a href="prop-firm-rules/index.html">Prop Firm Rules</a>
       <a href="exchanges/index.html">Exchanges</a>
       <a href="terminals/index.html">Terminals</a>
@@ -50,103 +51,47 @@
 </header>
 
 <main class="wrap">
-
-  <section class="hero">
-    <h1>FuturesEdge builds focused tools for crypto, futures and forex traders</h1>
-    <p class="lede">
-      A trading journal, a prop firm challenge tracker, and free calculators — built to work
-      together and built to keep your numbers private. Every app runs on-device: no account,
-      no login, no cloud. Your trades, your challenge progress and your calculations never
-      leave your phone.
-    </p>
-    <div class="hero-ctas">
-      <a class="btn-primary" href="#apps">See the apps →</a>
-      <a class="btn-secondary" href="prop-firm-rules/index.html">Prop firm rules database</a>
+  <section class="home-hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">Independent tools for independent traders</p>
+      <h1 id="hero-title">Understand your trades.<br><span>Know your risk.</span></h1>
+      <p class="hero-summary">Practical apps, clear comparisons and TradingView indicators. Everything you need to make sense of your own numbers.</p>
+      <div class="hero-actions"><a class="btn-primary" href="#apps">Find your trading tool →</a><a class="btn-secondary" href="#compare">Compare providers</a></div>
+      <p class="hero-detail">Android apps · On-device data · No account required</p>
+    </div>
+    <div class="hero-preview" aria-label="Trading app previews">
+      <figure class="preview-phone preview-phone--back"><img src="assets/products/tracker-dashboard.jpg" width="640" height="1387" alt="Challenge tracker showing drawdown headroom and an equity curve"><figcaption>Track your challenge</figcaption></figure>
+      <figure class="preview-phone preview-phone--front"><img src="assets/products/journal-dashboard.jpg" width="427" height="867" alt="Trading journal dashboard showing an equity curve and performance statistics"><figcaption>Understand your performance</figcaption></figure>
+      <p class="preview-caption">App previews. Displayed results are not a performance promise.</p>
     </div>
   </section>
-
-  <h2 id="apps">The apps</h2>
-  <p>Free tools and a full trading journal, all built to work together.</p>
-  <div class="product-grid">
-    <div class="product-card">
-      <span class="tag">Live</span>
-      <h3>FuturesEdge Crypto Journal</h3>
-      <p>Log every trade, review your stats, and find the patterns in your own trading — imports from 14 exchanges.</p>
-      <a class="card-link" href="apps/trading-journal.html">Learn more →</a>
+  <nav class="pathways" aria-label="Choose where to start">
+    <a href="prop-firm-rules/index.html"><span>01 / PROP TRADING</span><strong>Understand the rules</strong><small>Compare firms and challenge requirements →</small></a>
+    <a href="#apps"><span>02 / YOUR TRADING</span><strong>Work with your numbers</strong><small>Journaling, position sizing and planning →</small></a>
+    <a href="#indicators"><span>03 / YOUR CHARTS</span><strong>Explore the indicators</strong><small>See product details and demos on Etsy →</small></a>
+  </nav>
+  <section class="home-section" aria-labelledby="apps">
+    <div class="section-heading"><div><p class="eyebrow">The app collection</p><h2 id="apps">A focused tool for each decision.</h2></div><p>Keep your trading records on your device. Choose the tool that fits your workflow.</p></div>
+    <div class="app-collection"><article class="app-tile"><img class="product-icon" src="assets/products/journal-icon.png" width="64" height="64" alt="" loading="lazy"><p class="product-name">FuturesEdge Trading Journal</p><h3>Your trades. A clearer picture.</h3><p>Log trades, import exchange history and understand your performance.</p><a class="card-link" href="apps/trading-journal.html">Explore the app <span aria-hidden="true">↗</span></a></article>
+<article class="app-tile"><img class="product-icon" src="assets/products/tracker-icon.png" width="64" height="64" alt="" loading="lazy"><p class="product-name">Prop Firm Challenge Tracker</p><h3>Know your room to move.</h3><p>Track your logged results against challenge rules and drawdown limits.</p><a class="card-link" href="apps/prop-firm-tracker.html">Explore the app <span aria-hidden="true">↗</span></a></article>
+<article class="app-tile"><img class="product-icon" src="assets/products/calculator-icon.png" width="64" height="64" alt="" loading="lazy"><p class="product-name">Position Size Calculator</p><h3>Set your risk before your trade.</h3><p>Work out position size, margin and potential P&L in one place.</p><a class="card-link" href="apps/position-size-calculator.html">Explore the app <span aria-hidden="true">↗</span></a></article>
+<article class="app-tile"><img class="product-icon" src="assets/products/compound-icon.png" width="64" height="64" alt="" loading="lazy"><p class="product-name">Prop Firm Calculator</p><h3>Put the numbers behind your plan.</h3><p>Explore compound growth, evaluation expectancy and survival scenarios.</p><a class="card-link" href="apps/compound-calculator.html">Explore the app <span aria-hidden="true">↗</span></a></article>
+<article class="app-tile"><img class="product-icon" src="assets/products/meme-icon.png" width="64" height="64" alt="" loading="lazy"><p class="product-name">Meme Coin Profit & Break-Even</p><h3>Know what a trade really costs.</h3><p>Calculate market-cap outcomes and break-even after fees and slippage.</p><a class="card-link" href="apps/meme-coin-calculator.html">Explore the app <span aria-hidden="true">↗</span></a></article>
     </div>
-    <div class="product-card">
-      <span class="tag">Live</span>
-      <h3>Prop Firm Challenge Tracker</h3>
-      <p>Know exactly how far you are from breaching — FTMO, Apex, TopStep, Bitfunded and more. Free for 2 challenges.</p>
-      <a class="card-link" href="apps/prop-firm-tracker.html">Learn more →</a>
+  </section>
+  <section class="home-section" aria-labelledby="compare">
+    <div class="section-heading"><div><p class="eyebrow">Research before you choose</p><h2 id="compare">Compare providers &amp; offers.</h2></div><p>Find the details that matter: rules, fees and how each offer works.</p></div>
+    <div class="comparison-collection">
+      <a class="comparison-card" href="prop-firm-rules/index.html"><span class="eyebrow">Prop firms</span><h3>Read the rules before the challenge.</h3><p>Drawdown, daily loss limits and targets, with dated verification.</p><span class="card-link">Compare prop firms →</span></a>
+      <a class="comparison-card" href="exchanges/index.html"><span class="eyebrow">Exchanges</span><h3>See what your trading costs.</h3><p>Compare exchange fees, markets and available partner offers.</p><span class="card-link">Compare exchanges →</span></a>
+      <a class="comparison-card" href="terminals/index.html"><span class="eyebrow">Meme coin terminals</span><h3>Look beyond the headline fee.</h3><p>Understand fees, referral benefits and how cashback differs from a discount.</p><span class="card-link">Compare terminals →</span></a>
     </div>
-    <div class="product-card">
-      <span class="tag">Live</span>
-      <h3>Position Size Calculator</h3>
-      <p>Size any trade with risk/reward, margin and a live P&amp;L preview. Fast, free and offline.</p>
-      <a class="card-link" href="apps/position-size-calculator.html">Learn more →</a>
-    </div>
-    <div class="product-card">
-      <span class="tag">Live</span>
-      <h3>Prop Firm Calculator</h3>
-      <p>Compound growth, risk of ruin, evaluation EV and a Monte Carlo Survival Simulator. Three tools free, one paid unlock.</p>
-      <a class="card-link" href="apps/compound-calculator.html">Learn more →</a>
-    </div>
-    <div class="product-card">
-      <span class="tag">Live</span>
-      <h3>Meme Coin Profit &amp; Break-Even</h3>
-      <p>Market cap multiple, break-even after fees, hit-rate expectancy and a private trade log. Free, no wallet, no live data.</p>
-      <a class="card-link" href="apps/meme-coin-calculator.html">Learn more →</a>
-    </div>
-  </div>
-
-  <h2 id="indicators">The indicator</h2>
-  <p>A TradingView indicator, sold separately.</p>
-  <div class="product-grid">
-    <div class="product-card">
-      <span class="tag">Etsy</span>
-      <h3>TrendFlip — Buy/Sell Indicator</h3>
-      <p>Buy and sell signals plotted directly on your TradingView chart.
-        Invite-only Pine script: after purchase, send your TradingView
-        username and access is added to your account manually.</p>
-      <a class="card-link" href="https://www.etsy.com/au/listing/4516324849/trendflip-buy-sell-indicator-for"
-         target="_blank" rel="noopener">View on Etsy →</a>
-    </div>
-  </div>
-
-  <h2>Why FuturesEdge</h2>
-  <div class="why-grid">
-    <div>
-      <h4>Private by design</h4>
-      <p>No account, no login, no cloud. Your data lives on your device and never leaves it — uninstalling removes everything.</p>
-    </div>
-    <div>
-      <h4>Actually accurate</h4>
-      <p>The prop-firm rules database is verified firm-by-firm against official sources, with a verification date on every page — most competing data is stale or wrong.</p>
-    </div>
-    <div>
-      <h4>Honest tools</h4>
-      <p>Clear numbers, real math, no hype. The apps tell you the truth about your trading, your risk, and how close you are to a breach.</p>
-    </div>
-  </div>
-
-  <h2>Verified prop firm rules</h2>
-  <p>
-    Every drawdown type, daily loss limit, profit target and consistency rule for 9 major
-    prop trading firms — FTMO, TopStep, Apex, FundedNext, FundingPips, The5%ers, Breakout,
-    HyroTrader and Bitfunded — sourced from each firm's own official rules pages and
-    re-checked on the dates shown. No rule is guessed.
-  </p>
-  <a class="btn-secondary" href="prop-firm-rules/index.html">Compare all 9 firms →</a>
-
-  <h2>Exchange comparison</h2>
-  <p>
-    Fees, leverage caps and markets for Bitget, Bybit and BingX, compared side by side and
-    verified against each exchange's own public fee schedule — so you know what you're
-    actually signing up for before you do.
-  </p>
-  <a class="btn-secondary" href="exchanges/index.html">Compare exchanges →</a>
-
+  </section>
+  <section class="indicator-feature" aria-labelledby="indicators">
+    <div><p class="eyebrow">Made for TradingView</p><h2 id="indicators">Your charts.<br>A different perspective.</h2><p>Explore FuturesEdge indicators on Etsy, where each listing has its own product information and demonstrations.</p><a class="btn-secondary" href="https://www.etsy.com/au/shop/FuturesEdgeTrading" target="_blank" rel="noopener">Browse the Etsy shop ↗</a></div>
+    <article class="indicator-detail"><a class="indicator-artwork" href="https://www.etsy.com/au/listing/4516324849/trendflip-buy-sell-indicator-for" target="_blank" rel="noopener"><img src="assets/products/trendflip.png" width="1006" height="993" loading="lazy" alt="TrendFlip trend signal indicator shown on phone and laptop charts, with trend cloud and live alerts"></a><span class="tag">Featured indicator</span><h3>TrendFlip</h3><p class="indicator-subtitle">Buy/sell signals on your TradingView chart.</p><p>Read the full listing to see how the indicator works. Access is added manually using your TradingView username after purchase.</p><a class="btn-primary" href="https://www.etsy.com/au/listing/4516324849/trendflip-buy-sell-indicator-for" target="_blank" rel="noopener">See TrendFlip on Etsy ↗</a></article>
+  </section>
+  <section class="home-section why-section" aria-labelledby="why"><p class="eyebrow">The FuturesEdge approach</p><h2 id="why">Useful numbers. Clear explanations.</h2><div class="why-grid"><div><h3>Private by design</h3><p>Your app records stay on your device. No account or cloud sync required.</p></div><div><h3>Sources you can check</h3><p>Provider comparisons carry verification dates and explain where information is uncertain.</p></div><div><h3>Tools, not promises</h3><p>Understand your records and explore risk. No signals or calculations can guarantee a result.</p></div></div></section>
 </main>
 
 <footer class="site-footer">
@@ -160,7 +105,7 @@
         <h4>Site</h4>
         <a href="index.html">Home</a>
         <a href="index.html#apps">Apps</a>
-        <a href="index.html#indicators">Indicator</a>
+        <a href="index.html#indicators">Indicators</a>
         <a href="prop-firm-rules/index.html">Prop Firm Rules</a>
         <a href="exchanges/index.html">Exchanges</a>
         <a href="terminals/index.html">Terminals</a>
