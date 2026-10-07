@@ -14,7 +14,7 @@
 //
 // See README.md → "Updating a firm link" for the exact propagation steps.
 export const FIRM_LINKS = [
-  { firm: 'FTMO', url: 'https://join.ftmo.com/lvwSFjCqtgHnSODhKApb', affiliate: true, promo_note: '' },
+  { firm: 'FTMO', url: 'https://join.ftmo.com/lvwSFjCqtgHnSODhKApb', affiliate: true, promo_note: '', futures_url: 'https://join.ftmo.com/futures/lvwSFjCqtgHnSODhKApb', us_url: 'https://join.ftmo.oanda.com/lvwSFjCqtgHnSODhKApb', us_futures_url: 'https://join.ftmo.oanda.com/futures/lvwSFjCqtgHnSODhKApb', referral_code: 'lvwSFjCqtgHnSODhKApb' },
   { firm: 'TopStep', url: 'https://topstep.com', affiliate: false, promo_note: '' },
   { firm: 'Apex Trader Funding', url: 'https://apextraderfunding.com', affiliate: false, promo_note: '' },
   { firm: 'FundedNext', url: 'https://fundednext.com', affiliate: false, promo_note: '' },

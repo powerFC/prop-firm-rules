@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FTMO Rules 2026: Drawdown, Daily Loss &amp; Profit Targets Explained</title>
-<meta name="description" content="FTMO's 2-Step and 1-Step Evaluation rules for 2026, verified 2026-08-29: max drawdown type, daily loss limits, profit targets, minimum trading days and the Best Day consistency rule, explained plainly.">
+<meta name="description" content="FTMO's 2-Step and 1-Step Evaluation rules for 2026, verified 2026-10-08: max drawdown type, daily loss limits, profit targets, minimum trading days and the Best Day consistency rule, explained plainly.">
 <link rel="canonical" href="https://futuresedgetrade.app/prop-firm-rules/firms/ftmo.html">
 <link rel="stylesheet" href="../../css/style.css">
 <script type="application/ld+json">
@@ -13,7 +13,7 @@
   "@type": "Article",
   "headline": "FTMO Rules 2026: Drawdown, Daily Loss & Profit Targets Explained",
   "datePublished": "2026-07-16",
-  "dateModified": "2026-09-16",
+  "dateModified": "2026-10-08",
   "author": { "@type": "Organization", "name": "Prop Firm Rules" },
   "publisher": { "@type": "Organization", "name": "Prop Firm Rules" },
   "mainEntityOfPage": "https://futuresedgetrade.app/prop-firm-rules/firms/ftmo.html"
@@ -29,7 +29,7 @@
       "name": "Is FTMO's max drawdown static or trailing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Trailing, on both plans. FTMO recalculates the maximum loss limit daily from the highest account balance at 00:00 on any preceding trading day, and in FTMO's words the limit \"can only increase, but never decrease\". On a $100,000 account your floor starts at $90,000, but if you close a day at $105,000 the floor moves permanently to $95,000. This applies to both phases of the 2-Step Evaluation and to the 1-Step."
+        "text": "The 2-Step uses a static maximum loss limit of 10% of initial capital in both evaluation phases and on the subsequent FTMO Account. On a $100,000 account that floor stays at $90,000. The 1-Step uses an end-of-day trailing limit: the highest preceding midnight balance, or initial capital if higher, minus 10% of initial capital. A $105,000 midnight balance moves the 1-Step floor to $95,000 permanently."
       }
     },
     {
@@ -71,7 +71,7 @@
 <main class="wrap">
   <a class="back-link" href="../index.html">← All firms</a>
   <h1>FTMO Rules Explained (2026)</h1>
-  <div class="verified">✓ Rules verified 2026-08-29</div>
+  <div class="verified">✓ Rules verified 2026-10-08</div>
 
   <p class="lede">
     FTMO runs a forex/CFD evaluation with two paths: the long-standing 2-Step Evaluation, and a
@@ -101,11 +101,11 @@
         <tr>
           <td rowspan="2">2-Step Evaluation</td>
           <td>Phase 1</td><td>10%</td><td>5% fixed (of starting balance)</td>
-          <td>End-of-day trailing, 10%</td><td>4</td><td>None</td>
+          <td>Static, 10%</td><td>4</td><td>None</td>
         </tr>
         <tr>
           <td>Phase 2</td><td>5%</td><td>5% fixed</td>
-          <td>End-of-day trailing, 10%</td><td>4</td><td>None</td>
+          <td>Static, 10%</td><td>4</td><td>None</td>
         </tr>
         <tr>
           <td>1-Step Evaluation</td>
@@ -118,7 +118,8 @@
   <p>Account sizes on both plans: $10,000 / $25,000 / $50,000 / $100,000 / $200,000.</p>
 
   <h2>How FTMO's drawdown works</h2>
-  <p><strong>Both plans use an end-of-day trailing floor.</strong> FTMO recalculates your maximum loss limit at 00:00 CE(S)T each day, measured from the highest balance recorded at 00:00 on any preceding trading day — or your initial capital, whichever is higher. In FTMO's own words the limit "can only increase, but never decrease". On a $100,000 account the floor starts at $90,000. Close one day at $105,000 and the floor moves permanently to $95,000, even if you give the profit back. This is the mechanic most often assumed to work the other way, and it applies to both phases of the 2-Step as well as the funded FTMO Account.</p>
+  <p><strong>2-Step: a static floor.</strong> The maximum loss limit is 10% of initial capital and does not trail profits. This applies to both evaluation phases and the subsequent 2-Step FTMO Account.</p>
+  <p><strong>1-Step: an end-of-day trailing floor.</strong> At 00:00 CE(S)T, FTMO subtracts 10% of initial capital from the highest preceding midnight balance or initial capital, whichever is higher. On a $100,000 account the floor starts at $90,000; a $105,000 midnight balance raises it to $95,000. It never decreases during that account. <a href="https://ftmo.com/en/trading-objectives/">FTMO's Trading Objectives</a> and <a href="https://ftmo.com/en/comparison-table/">comparison table</a> confirm the distinction, checked 8 October 2026.</p>
 
   <h2>Notes &amp; unconfirmed details</h2>
   <ul class="notes-list">
@@ -133,11 +134,7 @@
 
   <h2>Frequently asked questions</h2>
   <h3>Is FTMO's max drawdown static or trailing?</h3>
-  <p>Trailing, on both plans. FTMO recalculates the maximum loss limit daily from the highest
-    account balance at 00:00 on any preceding trading day, and in FTMO's words the limit "can
-    only increase, but never decrease". On a $100,000 account your floor starts at $90,000, but
-    if you close a day at $105,000 the floor moves permanently to $95,000. This applies to both
-    phases of the 2-Step Evaluation and to the 1-Step.</p>
+  <p>The 2-Step uses a static maximum loss limit of 10% of initial capital in both evaluation phases and on the subsequent FTMO Account. On a $100,000 account that floor stays at $90,000. The 1-Step uses an end-of-day trailing limit: the highest preceding midnight balance, or initial capital if higher, minus 10% of initial capital. A $105,000 midnight balance moves the 1-Step floor to $95,000 permanently.</p>
 
   <h3>Does FTMO have a consistency rule?</h3>
   <p>Not on the 2-Step Evaluation. The 1-Step Evaluation has a Best Day Rule: your single best
@@ -154,6 +151,14 @@
     <span class="cta-note">Trading from the US? FTMO serves US clients through a separate site — <a href="https://join.ftmo.oanda.com/lvwSFjCqtgHnSODhKApb">open the US version here</a>. Same challenges, priced in USD, MetaTrader 5 and TradingView.</span>
     <span class="cta-note">Promotion current as at 18 Aug 2026 — FTMO can change or end it without notice, so confirm the price before you pay.</span>
     <span class="cta-note">Affiliate link — we may earn a commission at no extra cost to you.</span>
+  </div>
+
+  <div class="cta-card cta-card--affiliate">
+    <h3>FTMO Futures — Global and US</h3>
+    <p>FTMO Futures is a separate product from the CFD Challenges described above. Check its own evaluation rules before choosing an account.</p>
+    <a class="cta-btn" href="https://join.ftmo.com/futures/lvwSFjCqtgHnSODhKApb">Explore FTMO Futures — Global →</a>
+    <a class="cta-btn" href="https://join.ftmo.oanda.com/futures/lvwSFjCqtgHnSODhKApb">Explore FTMO Futures — US →</a>
+    <span class="cta-note">Futures referral code: <strong>lvwSFjCqtgHnSODhKApb</strong>. Enter it at checkout for referral attribution; this is not a discount code. Affiliate links — we may earn a commission at no extra cost to you.</span>
   </div>
 
   <h2>Compare with other firms</h2>
