@@ -379,3 +379,6 @@ td.num, th.num { text-align: right; }
  .comparison-table td .cta-note { margin-top: 2px; }
 }
 @media(max-width:480px) { .product-gallery figure { width: calc(50% - 11px); } .product-gallery figcaption { font-size: 11px; } }
+
+/* Keep both journal store buttons spaced at desktop and phone widths. */
+.store-links { display: flex; flex-wrap: wrap; gap: 12px; }
