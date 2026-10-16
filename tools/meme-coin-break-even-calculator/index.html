@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meme Coin Break-Even Calculator: Fees, Tips &amp; Slippage | FuturesEdge</title>
+<meta name="description" content="Calculate the gain needed to break even after buy and sell fees, estimated slippage and fixed costs. Free browser tool with clear assumptions and no wallet.">
+<link rel="canonical" href="https://futuresedgetrade.app/tools/meme-coin-break-even-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Meme Coin Break-Even Calculator: Fees, Tips &amp; Slippage">
+<meta property="og:description" content="Calculate the gain needed to break even after buy and sell fees, estimated slippage and fixed costs. Free browser tool with clear assumptions and no wallet.">
+<meta property="og:url" content="https://futuresedgetrade.app/tools/meme-coin-break-even-calculator/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../css/style.css">
+<style>.read-time{color:var(--muted);font-size:.9rem}.guide-nav{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.guide-body{max-width:760px}.guide-body h2{margin-top:36px}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:14px;border-bottom:1px solid var(--border);vertical-align:top}.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.calc-grid label{display:block;font-weight:600}.calc-grid input{display:block;width:100%;margin-top:7px;padding:12px;background:var(--bg);border:1px solid var(--muted);border-radius:8px;color:var(--text);font:inherit}.calc-grid small{display:block;color:var(--muted);font-weight:400}.result-panel{margin:24px 0;padding:24px;border:1px solid var(--accent);border-radius:12px;background:var(--surface)}.result-number{font-size:clamp(2rem,7vw,3.4rem);font-weight:800;color:var(--cta-green);margin:0}.calc-actions{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}.guide-body .cta-btn{display:inline-block;padding:12px 18px;background:var(--cta-green);color:var(--cta-green-ink);border:0;border-radius:8px;font-weight:700}button.cta-btn{cursor:pointer;font:inherit}.guide-body button[type=reset]{background:var(--surface);color:var(--text);border:1px solid var(--muted)}input:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}[hidden]{display:none!important}@media(max-width:560px){.calc-grid{grid-template-columns:1fr}th,td{padding:10px;min-width:125px}}</style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Meme Coin Break-Even Calculator: Fees, Tips & Slippage",
+  "description": "Calculate the gain needed to break even after buy and sell fees, estimated slippage and fixed costs. Free browser tool with clear assumptions and no wallet.",
+  "url": "https://futuresedgetrade.app/tools/meme-coin-break-even-calculator/",
+  "dateModified": "2026-10-16",
+  "author": {
+    "@type": "Organization",
+    "name": "FuturesEdge"
+  },
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">FuturesEdge</a>
+    <nav class="site-nav">
+      <a href="../../index.html">Home</a>
+      <a href="../../index.html#apps">Apps</a>
+      <a href="../../prop-firm-rules/index.html">Prop Firm Rules</a>
+      <a href="../../exchanges/index.html">Exchanges</a>
+      <a href="../../terminals/index.html">Terminals</a>
+      <a href="../../guides/index.html">Guides</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap guide-body">
+<a href="../../guides/index.html">← Guides and tools</a>
+<h1>Meme coin break-even calculator</h1>
+<p class="lede">How far does your position need to rise before you recover its cost? Include both sides of the trade and the fixed costs that matter most on smaller amounts.</p>
+<p>Free · No wallet or account · Inputs stay in this browser</p>
+<form id="break-even-form">
+<div class="calc-grid">
+<label for="size">Position before costs ($)<input id="size" name="size" type="number" inputmode="decimal" step="any" min="0" value="100" required aria-describedby="size-hint">
+<small id="size-hint">Greater than zero. Buy fees and fixed costs are additional.</small>
+</label>
+<label for="buyFeePct">Total buy fees (%)<input id="buyFeePct" name="buyFeePct" type="number" inputmode="decimal" step="any" min="0" value="1" required aria-describedby="buyFeePct-hint">
+<small id="buyFeePct-hint">Combine platform and venue fees charged on the buy notional.</small>
+</label>
+<label for="sellFeePct">Total sell fees (%)<input id="sellFeePct" name="sellFeePct" type="number" inputmode="decimal" step="any" min="0" value="1" required aria-describedby="sellFeePct-hint">
+<small id="sellFeePct-hint">Fees assumed deducted from the reference sale value.</small>
+</label>
+<label for="slippagePct">Estimated exit slippage (%)<input id="slippagePct" name="slippagePct" type="number" inputmode="decimal" step="any" min="0" value="2" required aria-describedby="slippagePct-hint">
+<small id="slippagePct-hint">Estimated execution loss, not the slippage tolerance setting.</small>
+</label>
+<label for="priority">Total fixed round-trip costs ($)<input id="priority" name="priority" type="number" inputmode="decimal" step="any" min="0" value="0.50" required aria-describedby="priority-hint">
+<small id="priority-hint">Include both sides: network costs, priority fees, tips and other fixed costs.</small>
+</label>
+<label for="entryMcap">Entry market cap ($, optional)<input id="entryMcap" name="entryMcap" type="number" inputmode="decimal" step="any" min="0" value=""  aria-describedby="entryMcap-hint">
+<small id="entryMcap-hint">For a proportional market-cap estimate at unchanged supply.</small>
+</label>
+</div>
+<div class="calc-actions">
+<button class="cta-btn" type="submit">Calculate break-even</button>
+<button type="reset" class="cta-btn">Reset example</button>
+</div>
+</form>
+<p id="calc-error" role="alert" hidden>
+</p>
+<section id="calc-result" class="result-panel" aria-live="polite" aria-atomic="true" hidden>
+<h2>Estimated gain needed</h2>
+<p class="result-number" id="gain">
+</p>
+<dl>
+<dt>Total cost to recover</dt>
+<dd id="outlay">
+</dd>
+<dt>Required reference position value before exit costs</dt>
+<dd id="required-value">
+</dd>
+<dt>Price multiple</dt>
+<dd id="multiple">
+</dd>
+<dt id="mcap-label" hidden>Estimated break-even market cap</dt>
+<dd id="mcap" hidden>
+</dd>
+</dl>
+</section>
+<noscript>
+<p>Enable JavaScript to use the calculator. The formula and example are below.</p>
+</noscript>
+<h2>How this estimate works</h2>
+<p>Total cost = position × (1 + buy fee) + total fixed costs. Required reference exit value = total cost ÷ (1 − sell fee − estimated exit slippage). Required gain = (exit value ÷ position − 1) × 100.</p>
+<p>Rates are converted from percentages. Fees and estimated exit slippage are modelled as additive deductions from the same reference exit value. This is the existing FuturesEdge meme app model. Buy-side execution loss is not separately modelled: use your actual acquired position value for retrospective calculations. Cashback is excluded until received. Do not subtract it twice by also entering a net fee.</p>
+<h2>Worked example</h2>
+<p>A $100 position, 1% buy fee, 1% sell fee, 2% estimated exit slippage and $0.50 fixed costs require $101.50 back. Dividing by 0.97 gives $104.64 of reference position value, or a 4.64% gain. Defaults are illustrative, not a quote from any platform.</p>
+<h2>Limits to keep in mind</h2>
+<p>This models one complete buy and sell. It does not predict fills, liquidity or price impact. Multiple entries, partial exits, token taxes and changing currency rates need separate treatment. Convert every fixed cost to the same currency. The optional market-cap result assumes price and market cap scale together at unchanged supply. Calculations use full precision; results are rounded for display.</p>
+<h2>Understand your platform costs</h2>
+<nav class="guide-nav" aria-label="Fee guides">
+<a href="../../guides/axiom-fees.html">Axiom fees explained</a>
+<a href="../../guides/gmgn-copy-trading-fees.html">GMGN copy-trading costs</a>
+<a href="../../guides/axiom-vs-gmgn.html">Axiom vs GMGN</a>
+</nav>
+
+<p>Educational estimate only. Trading can result in total loss.</p>
+<script src="calculator.js" defer>
+</script>
+<section class="cta-card" aria-labelledby="practice-title">
+<h2 id="practice-title">Practise meme trading without risking real money</h2>
+<p>Try simulated entries and exits in the FuturesEdge Android app, listed on Google Play as <strong>Meme Coin Profit &amp; Break-Even</strong>. Practise making decisions as a simulated chart unfolds, then review the outcome and trading costs.</p>
+<p>No wallet connection or real-money trades. A free round can be replayed; additional random practice rounds require a one-time purchase. Simulated results do not predict live trading performance.</p>
+<a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.elitetrendhub.memecalc&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dpractice_cta%26utm_campaign%3Dmeme_break_even">Get the app and practise →</a>
+</section>
+<section aria-labelledby="terminal-links-title">
+<h2 id="terminal-links-title">Explore meme trading platforms</h2>
+<p>Use our partner links to explore the platforms below. Check the live fees and account terms before trading.</p>
+<nav class="guide-nav" aria-label="Terminal affiliate links"><a class="cta-btn" href="https://terminal.pump.fun/rk/futuresedge" rel="sponsored">Terminal →</a><a class="cta-btn" href="https://axiom.trade/@futrsedge" rel="sponsored">Axiom →</a><a class="cta-btn" href="https://gmgn.ai/r/Futuredge" rel="sponsored">GMGN →</a><a class="cta-btn" href="https://fomo.family/r/FuturesEdge" rel="sponsored">fomo →</a><a class="cta-btn" href="https://photon-sol.tinyastro.io/@futuresedge" rel="sponsored">Photon →</a></nav>
+<p class="cta-note">Affiliate links: FuturesEdge may earn a commission if you sign up or trade through these links, at no extra cost to you.</p>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">FuturesEdge</div>
+        <p class="footer-tagline">Focused tools for crypto, futures and forex traders.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html#apps">Apps</a>
+        <a href="../../prop-firm-rules/index.html">Prop Firm Rules</a>
+        <a href="../../exchanges/index.html">Exchanges</a>
+        <a href="../../terminals/index.html">Terminals</a>
+        <a href="../../guides/index.html">Guides</a>
+      </div>
+      <div class="footer-col">
+        <h4>Apps</h4>
+        <a href="../../apps/trading-journal.html">Trading Journal</a>
+        <a href="../../apps/prop-firm-tracker.html">Prop Firm Tracker</a>
+        <a href="../../apps/position-size-calculator.html">Position Size Calculator</a>
+        <a href="../../apps/compound-calculator.html">Prop Firm Calculator</a>
+        <a href="../../apps/meme-coin-calculator.html">Meme Coin Profit &amp; Break-Even</a>
+      </div>
+      <div class="footer-col">
+        <h4>More</h4>
+        <a href="https://www.etsy.com/au/shop/FuturesEdgeTrading" target="_blank" rel="noopener">Etsy Shop</a>
+        <a href="mailto:futuresedgetrade@gmail.com">Contact</a>
+      </div>
+    </div>
+    <p class="disclosure">
+      FuturesEdge builds independent trading tools and is not affiliated with, endorsed by, or
+      sponsored by any exchange or prop trading firm. Some links on this site are affiliate
+      links — FuturesEdge may earn a commission if you open an account or make a purchase
+      through them, at no extra cost to you. Nothing on this site is financial, investment or
+      trading advice. Trading involves risk of loss.
+    </p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GMGN Copy Trading Fees: Costs, Slippage &amp; Break-Even | FuturesEdge</title>
+<meta name="description" content="Understand GMGN copy-trading fees, priority costs and execution differences. Estimate break-even before copying a trade with a free browser calculator.">
+<link rel="canonical" href="https://futuresedgetrade.app/guides/gmgn-copy-trading-fees.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GMGN Copy Trading Fees: Costs, Slippage &amp; Break-Even">
+<meta property="og:description" content="Understand GMGN copy-trading fees, priority costs and execution differences. Estimate break-even before copying a trade with a free browser calculator.">
+<meta property="og:url" content="https://futuresedgetrade.app/guides/gmgn-copy-trading-fees.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../css/style.css">
+<style>.read-time{color:var(--muted);font-size:.9rem}.guide-nav{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.guide-body{max-width:760px}.guide-body h2{margin-top:36px}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:14px;border-bottom:1px solid var(--border);vertical-align:top}.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.calc-grid label{display:block;font-weight:600}.calc-grid input{display:block;width:100%;margin-top:7px;padding:12px;background:var(--bg);border:1px solid var(--muted);border-radius:8px;color:var(--text);font:inherit}.calc-grid small{display:block;color:var(--muted);font-weight:400}.result-panel{margin:24px 0;padding:24px;border:1px solid var(--accent);border-radius:12px;background:var(--surface)}.result-number{font-size:clamp(2rem,7vw,3.4rem);font-weight:800;color:var(--cta-green);margin:0}.calc-actions{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}.guide-body .cta-btn{display:inline-block;padding:12px 18px;background:var(--cta-green);color:var(--cta-green-ink);border:0;border-radius:8px;font-weight:700}button.cta-btn{cursor:pointer;font:inherit}.guide-body button[type=reset]{background:var(--surface);color:var(--text);border:1px solid var(--muted)}input:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}[hidden]{display:none!important}@media(max-width:560px){.calc-grid{grid-template-columns:1fr}th,td{padding:10px;min-width:125px}}</style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "name": "GMGN Copy Trading Fees: Costs, Slippage & Break-Even",
+  "description": "Understand GMGN copy-trading fees, priority costs and execution differences. Estimate break-even before copying a trade with a free browser calculator.",
+  "url": "https://futuresedgetrade.app/guides/gmgn-copy-trading-fees.html",
+  "dateModified": "2026-10-16",
+  "author": {
+    "@type": "Organization",
+    "name": "FuturesEdge"
+  }
+}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">FuturesEdge</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#apps">Apps</a>
+      <a href="../prop-firm-rules/index.html">Prop Firm Rules</a>
+      <a href="../exchanges/index.html">Exchanges</a>
+      <a href="../terminals/index.html">Terminals</a>
+      <a href="../guides/index.html">Guides</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap guide-body">
+<a href="index.html">← Guides</a>
+<h1>GMGN copy-trading fees: what a copied trade really costs</h1>
+<p class="read-time">Sources checked 16 October 2026 · By FuturesEdge</p>
+<p class="lede">Copying a wallet does not reproduce its exact entry, exit or return. Your order has its own execution price and costs, and fixed transaction costs matter more on smaller positions.</p>
+<h2>What GMGN documents</h2>
+<p>GMGN's <a href="https://docs.gmgn.ai/index/copy-trade-copy-smart-money-automatically-earn-sol">official copy-trading guide</a> describes a 1% handling fee alongside gas priority costs. It warns that frequent copying and high priority fees can consume SOL even when the copied trades show profits. Confirm the current cost in your own transaction preview.</p>
+<h2>Why your result can differ from the copied wallet</h2>
+<ul>
+<li>
+<strong>Timing:</strong> your order reaches the market after the transaction you follow, so prices and available liquidity can change.</li>
+<li>
+<strong>Position size:</strong> a fixed SOL fee is a different percentage of a small copied trade than of a larger source trade.</li>
+<li>
+<strong>Sell rules:</strong> GMGN documents follow-selling, manual selling and take-profit/stop-loss modes. Know which mode you selected.</li>
+<li>
+<strong>Execution:</strong> settings, liquidity and network conditions affect whether an order completes.</li>
+</ul>
+<h2>Small amounts make fixed fees visible</h2>
+<p>For an illustrative $20 position, 1% buy fee, 1% sell fee, 2% estimated exit slippage and $0.50 in total fixed costs imply a <strong>6.70% reference-price gain</strong> to break even. At $100, the same assumptions imply <strong>4.64%</strong>. These are scenarios, not measured GMGN execution costs.</p>
+<div class="cta-card">
+<h2>Put your own costs into the calculation</h2>
+<p>Estimate the price move needed to recover your position and trading costs.</p>
+<a class="cta-btn" href="../tools/meme-coin-break-even-calculator/">Open the free calculator →</a>
+</div>
+<h2>What to check before enabling a copy task</h2>
+<ol>
+<li>Read the transaction preview and your selected sell mode.</li>
+<li>Add estimated buy and sell priority costs and any other separately charged fixed costs.</li>
+<li>Check the size and liquidity filters against the orders you expect to copy.</li>
+<li>Reconcile completed trades against your wallet balance, including failed transactions and rewards.</li>
+</ol>
+<p>GMGN's guide also describes an execution-speed mode that uses unconfirmed transactions, with rollback and duplicate-execution risks. Faster execution does not establish better returns. This guide does not recommend wallets to copy or promise profitable settings.</p>
+
+<h2>Keep exploring</h2>
+<nav class="guide-nav" aria-label="Related guides">
+<a href="axiom-fees.html">Axiom fees</a>
+<a href="gmgn-copy-trading-fees.html">GMGN copy-trading costs</a>
+<a href="axiom-vs-gmgn.html">Axiom vs GMGN</a>
+<a href="../tools/meme-coin-break-even-calculator/">Break-even calculator</a>
+</nav>
+<p>Educational information only. Copy trading can result in total loss.</p>
+<section class="cta-card" aria-labelledby="practice-title">
+<h2 id="practice-title">Practise meme trading without risking real money</h2>
+<p>Try simulated entries and exits in the FuturesEdge Android app, listed on Google Play as <strong>Meme Coin Profit &amp; Break-Even</strong>. Practise making decisions as a simulated chart unfolds, then review the outcome and trading costs.</p>
+<p>No wallet connection or real-money trades. A free round can be replayed; additional random practice rounds require a one-time purchase. Simulated results do not predict live trading performance.</p>
+<a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.elitetrendhub.memecalc&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dpractice_cta%26utm_campaign%3Dgmgn-copy-trading-fees">Get the app and practise →</a>
+</section>
+<section aria-labelledby="terminal-links-title">
+<h2 id="terminal-links-title">Explore meme trading platforms</h2>
+<p>Use our partner links to explore the platforms below. Check the live fees and account terms before trading.</p>
+<nav class="guide-nav" aria-label="Terminal affiliate links"><a class="cta-btn" href="https://terminal.pump.fun/rk/futuresedge" rel="sponsored">Terminal →</a><a class="cta-btn" href="https://axiom.trade/@futrsedge" rel="sponsored">Axiom →</a><a class="cta-btn" href="https://gmgn.ai/r/Futuredge" rel="sponsored">GMGN →</a><a class="cta-btn" href="https://fomo.family/r/FuturesEdge" rel="sponsored">fomo →</a><a class="cta-btn" href="https://photon-sol.tinyastro.io/@futuresedge" rel="sponsored">Photon →</a></nav>
+<p class="cta-note">Affiliate links: FuturesEdge may earn a commission if you sign up or trade through these links, at no extra cost to you.</p>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">FuturesEdge</div>
+        <p class="footer-tagline">Focused tools for crypto, futures and forex traders.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#apps">Apps</a>
+        <a href="../prop-firm-rules/index.html">Prop Firm Rules</a>
+        <a href="../exchanges/index.html">Exchanges</a>
+        <a href="../terminals/index.html">Terminals</a>
+        <a href="../guides/index.html">Guides</a>
+      </div>
+      <div class="footer-col">
+        <h4>Apps</h4>
+        <a href="../apps/trading-journal.html">Trading Journal</a>
+        <a href="../apps/prop-firm-tracker.html">Prop Firm Tracker</a>
+        <a href="../apps/position-size-calculator.html">Position Size Calculator</a>
+        <a href="../apps/compound-calculator.html">Prop Firm Calculator</a>
+        <a href="../apps/meme-coin-calculator.html">Meme Coin Profit &amp; Break-Even</a>
+      </div>
+      <div class="footer-col">
+        <h4>More</h4>
+        <a href="https://www.etsy.com/au/shop/FuturesEdgeTrading" target="_blank" rel="noopener">Etsy Shop</a>
+        <a href="mailto:futuresedgetrade@gmail.com">Contact</a>
+      </div>
+    </div>
+    <p class="disclosure">
+      FuturesEdge builds independent trading tools and is not affiliated with, endorsed by, or
+      sponsored by any exchange or prop trading firm. Some links on this site are affiliate
+      links — FuturesEdge may earn a commission if you open an account or make a purchase
+      through them, at no extra cost to you. Nothing on this site is financial, investment or
+      trading advice. Trading involves risk of loss.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
