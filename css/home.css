@@ -89,3 +89,7 @@
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } }
 
 .partner-disclosure { color: #b8c4dc; font-size: 13px; margin: 0 0 20px; max-width: 760px; }
+
+.partner-logo-wrap { height: 64px; display: flex; align-items: center; margin-bottom: 20px; }
+.partner-logo { display: block; width: 56px; height: 56px; object-fit: contain; border-radius: 10px; }
+.partner-logo--ftmo { width: 155px; height: auto; border-radius: 0; }
