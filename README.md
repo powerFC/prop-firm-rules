@@ -8,6 +8,7 @@ comparison, published via GitHub Pages with a custom domain (see `CNAME`).
 
 ```
 /                                  Home
+/apps/learn-to-trade.html          Learn to Trade: Practice — Android lessons
 /apps/trading-journal.html         App landing page (SEO)
 /apps/prop-firm-tracker.html       App landing page (SEO)
 /apps/position-size-calculator.html App landing page (SEO)

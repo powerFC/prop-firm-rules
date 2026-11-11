@@ -93,3 +93,9 @@
 .partner-logo-wrap { height: 64px; display: flex; align-items: center; margin-bottom: 20px; }
 .partner-logo { display: block; width: 56px; height: 56px; object-fit: contain; border-radius: 10px; }
 .partner-logo--ftmo { width: 155px; height: auto; border-radius: 0; }
+
+@media (min-width: 761px) { .comparison-collection--partners { grid-template-columns: repeat(2, 1fr); } }
+
+/* Six app cards: balanced pairs, stacked on phones. */
+.app-collection--six .app-tile { grid-column: span 3; }
+@media (max-width: 700px) { .app-collection--six .app-tile { grid-column: auto; } }
