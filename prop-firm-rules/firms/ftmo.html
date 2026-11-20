@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FTMO Rules 2026: Drawdown, Daily Loss &amp; Profit Targets Explained</title>
-<meta name="description" content="FTMO's 2-Step and 1-Step Evaluation rules for 2026, verified 2026-10-08: max drawdown type, daily loss limits, profit targets, minimum trading days and the Best Day consistency rule, explained plainly.">
+<meta name="description" content="Compare FTMO's 1-Step and 2-Step rules, including static and trailing maximum loss, daily loss limits, and the current and legacy 1-Step consistency rules.">
 <link rel="canonical" href="https://futuresedgetrade.app/prop-firm-rules/firms/ftmo.html">
 <link rel="stylesheet" href="../../css/style.css?v=20261016-cards">
 <script type="application/ld+json">
@@ -13,7 +13,7 @@
   "@type": "Article",
   "headline": "FTMO Rules 2026: Drawdown, Daily Loss & Profit Targets Explained",
   "datePublished": "2026-07-16",
-  "dateModified": "2026-10-08",
+  "dateModified": "2026-11-20",
   "author": { "@type": "Organization", "name": "Prop Firm Rules" },
   "publisher": { "@type": "Organization", "name": "Prop Firm Rules" },
   "mainEntityOfPage": "https://futuresedgetrade.app/prop-firm-rules/firms/ftmo.html"
@@ -29,7 +29,7 @@
       "name": "Is FTMO's max drawdown static or trailing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The 2-Step uses a static maximum loss limit of 10% of initial capital in both evaluation phases and on the subsequent FTMO Account. On a $100,000 account that floor stays at $90,000. The 1-Step uses an end-of-day trailing limit: the highest preceding midnight balance, or initial capital if higher, minus 10% of initial capital. A $105,000 midnight balance moves the 1-Step floor to $95,000 permanently."
+        "text": "The 2-Step maximum-loss floor stays at $90,000 on a $100,000 simulated account. The 1-Step floor starts at $90,000 and rises to $94,000 once the balance reaches $104,000 at the daily reset. A subsequent lower reset balance leaves that floor at $94,000."
       }
     },
     {
@@ -37,7 +37,7 @@
       "name": "Does FTMO have a consistency rule?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not on the 2-Step Evaluation. The 1-Step Evaluation has a Best Day Rule: your single best day of profit can't exceed 50% of the total profit from your positive days."
+        "text": "FTMO 1-Step caps the best day's closed profit at 50% of total closed profit, including losing days, for accounts initiated from orders created on or after 12 October 2026 or merged on or after that date. Accounts directly initiated from earlier orders use the legacy Best Day Rule, which counts profitable days only. The 2-Step Evaluation has no consistency rule."
       }
     },
     {
@@ -71,7 +71,7 @@
 <main class="wrap">
   <a class="back-link" href="../index.html">← All firms</a>
   <h1>FTMO Rules Explained (2026)</h1>
-  <div class="verified">✓ Rules verified 2026-10-08</div>
+  <div class="verified">✓ Loss limits and consistency checked 20 November 2026</div>
 
   <p class="lede">
     FTMO runs a forex/CFD evaluation with two paths: the long-standing 2-Step Evaluation, and a
@@ -99,26 +99,31 @@
       <tbody>
         <tr>
           <td rowspan="2">2-Step Evaluation</td>
-          <td>Phase 1</td><td>10%</td><td>5% fixed (of starting balance)</td>
+          <td>Phase 1</td><td>10%</td><td>5% of initial capital</td>
           <td>Static, 10%</td><td>4</td><td>None</td>
         </tr>
         <tr>
-          <td>Phase 2</td><td>5%</td><td>5% fixed</td>
+          <td>Phase 2</td><td>5%</td><td>5% of initial capital</td>
           <td>Static, 10%</td><td>4</td><td>None</td>
         </tr>
         <tr>
           <td>1-Step Evaluation</td>
-          <td>Single phase</td><td>10%</td><td>3% fixed</td>
-          <td>End-of-day trailing, 10%</td><td>0</td><td>Best day ≤ 50% of positive-days profit</td>
+          <td>Single phase</td><td>10%</td><td>3% of initial capital</td>
+          <td>End-of-day trailing, 10%</td><td>0</td><td>Best day ≤ 50% of total closed profit (current rule)</td>
         </tr>
       </tbody>
     </table>
   </div>
+  <p>FTMO recalculates the daily loss floor at midnight CE(S)T by subtracting the plan's daily loss amount from the balance recorded at that reset.</p>
   <p>Account sizes on both plans: $10,000 / $25,000 / $50,000 / $100,000 / $200,000.</p>
 
   <h2>How FTMO's drawdown works</h2>
-  <p><strong>2-Step: a static floor.</strong> The maximum loss limit is 10% of initial capital and does not trail profits. This applies to both evaluation phases and the subsequent 2-Step FTMO Account.</p>
-  <p><strong>1-Step: an end-of-day trailing floor.</strong> At 00:00 CE(S)T, FTMO subtracts 10% of initial capital from the highest preceding midnight balance or initial capital, whichever is higher. On a $100,000 account the floor starts at $90,000; a $105,000 midnight balance raises it to $95,000. It never decreases during that account. <a href="https://ftmo.com/en/trading-objectives/">FTMO's Trading Objectives</a> and <a href="https://ftmo.com/en/comparison-table/">comparison table</a> confirm the distinction, checked 8 October 2026.</p>
+  <p><strong>2-Step uses a static floor.</strong> Subtract 10% of initial simulated capital from that starting capital. On a $100,000 account the floor stays at $90,000 in both evaluation phases and on the subsequent 2-Step FTMO Account.</p>
+  <p><strong>1-Step uses an end-of-day trailing floor.</strong> At midnight CE(S)T, FTMO subtracts 10% of initial simulated capital from the highest recorded midnight balance or initial capital, whichever is higher. On a $100,000 account the floor starts at $90,000. A $104,000 midnight balance raises it to $94,000, and a later drop in balance leaves the floor at $94,000. FTMO resets the floor if you withdraw a reward and receive a new 1-Step FTMO Account. See <a href="https://ftmo.com/en/trading-objectives/">FTMO's Trading Objectives</a>.</p>
+
+  <h2>Current and legacy 1-Step consistency rules</h2>
+  <p>For accounts initiated from orders created on or after 12 October 2026, or merged on or after that date, the best day's closed profit must be at most 50% of total closed profit. Losing days reduce that total. The legacy Best Day Rule counts only profitable days and applies to accounts directly initiated from earlier orders, subject to the merger rule.</p>
+  <p>The applicable 1-Step rule affects passing the challenge and reward eligibility on the subsequent FTMO Account. FTMO shows the result in Account MetriX.</p>
 
   <h2>Notes &amp; unconfirmed details</h2>
   <ul class="notes-list">
@@ -133,11 +138,10 @@
 
   <h2>Frequently asked questions</h2>
   <h3>Is FTMO's max drawdown static or trailing?</h3>
-  <p>The 2-Step uses a static maximum loss limit of 10% of initial capital in both evaluation phases and on the subsequent FTMO Account. On a $100,000 account that floor stays at $90,000. The 1-Step uses an end-of-day trailing limit: the highest preceding midnight balance, or initial capital if higher, minus 10% of initial capital. A $105,000 midnight balance moves the 1-Step floor to $95,000 permanently.</p>
+  <p>The 2-Step maximum-loss floor stays at $90,000 on a $100,000 simulated account. The 1-Step floor starts at $90,000 and rises to $94,000 once the balance reaches $104,000 at the daily reset. A subsequent lower reset balance leaves that floor at $94,000.</p>
 
   <h3>Does FTMO have a consistency rule?</h3>
-  <p>Not on the 2-Step Evaluation. The 1-Step Evaluation has a Best Day Rule: your single best
-    day of profit can't exceed 50% of the total profit from your positive days.</p>
+  <p>FTMO 1-Step caps the best day's closed profit at 50% of total closed profit, including losing days, for accounts initiated from orders created on or after 12 October 2026 or merged on or after that date. Accounts directly initiated from earlier orders use the legacy Best Day Rule, which counts profitable days only. The 2-Step Evaluation has no consistency rule.</p>
 
   <h3>Is the FTMO evaluation fee refundable?</h3>
   <p>On the 2-Step Evaluation, yes — it's refunded once you pass. On the 1-Step Evaluation, the
