@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FTMO vs The5%ers 2026: 1-Step Rules Compared</title>
-<meta name="description" content="FTMO's 1-Step Evaluation vs The5%ers' 1-Step, compared 2026: identical target and daily loss, but a trailing vs static drawdown and two different consistency-rule denominators — and which trader each suits.">
+<meta name="description" content="Compare FTMO 1-Step and The5%ers Summer 1-Step. See how their daily loss and maximum loss rules differ, and which FTMO accounts use the legacy Best Day Rule.">
 <link rel="canonical" href="https://futuresedgetrade.app/prop-firm-rules/compare/ftmo-vs-the5ers.html">
 <link rel="stylesheet" href="../../css/style.css?v=20261016-cards">
 <script type="application/ld+json">
@@ -13,7 +13,7 @@
   "@type": "Article",
   "headline": "FTMO vs The5%ers 2026: 1-Step Rules Compared",
   "datePublished": "2026-07-16",
-  "dateModified": "2026-10-08",
+  "dateModified": "2026-11-20",
   "author": { "@type": "Organization", "name": "Prop Firm Rules" },
   "publisher": { "@type": "Organization", "name": "Prop Firm Rules" },
   "mainEntityOfPage": "https://futuresedgetrade.app/prop-firm-rules/compare/ftmo-vs-the5ers.html"
@@ -26,10 +26,10 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is FTMO or The5%ers' max drawdown stricter on the 1-Step plans?",
+      "name": "How do the two maximum-loss floors work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The5%ers' 1-Step uses a flat static 6% floor that never moves in our data. FTMO's 1-Step uses a confirmed 10% end-of-day trailing floor: the floor rises with the highest preceding midnight balance, unlike a static floor."
+        "text": "On a $100,000 simulated account, the FTMO 1-Step floor starts at $90,000 and can rise with the highest midnight balance. The5%ers Summer 1-Step floor stays at $94,000 because its 6% maximum loss is measured from the initial balance."
       }
     },
     {
@@ -37,7 +37,7 @@
       "name": "How do FTMO and The5%ers' consistency rules differ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both cap your best single day at 50%, but against different denominators. FTMO's 1-Step compares your best day to the sum of only your positive days' profit — losing days don't count against you. The5%ers' 1-Step compares your best day to your total net profit, so red days do count against you, making it the stricter of the two in practice."
+        "text": "FTMO's current 1-Step rule uses total closed profit, including losing days. Its legacy Best Day Rule uses profit from profitable days only. The5%ers confirms a 50% cap for Summer 1-Step. Its general FAQs refer to profits from profitable days and say losing trades are excluded from daily consistency P&L."
       }
     }
   ]
@@ -63,64 +63,39 @@
 <main class="wrap">
   <a class="back-link" href="../index.html">← All firms</a>
   <h1>FTMO vs The5%ers (2026)</h1>
+  <div class="verified">✓ Checked against official rules 20 November 2026</div>
   <p class="lede">
-    FTMO's 1-Step Evaluation and The5%ers' 1-Step share an identical target and daily loss
-    percentage — but diverge on drawdown type and on exactly how their 50% consistency rules
-    are calculated.
+    FTMO 1-Step and The5%ers Summer 1-Step both have a 10% evaluation target. Compare how each
+    sets the daily loss and maximum-loss floors, and check which consistency calculation applies.
   </p>
 
   <h2>Side by side (1-Step plans)</h2>
   <div class="table-wrap">
     <table>
       <thead>
-        <tr><th>Firm</th><th>Profit target</th><th>Daily loss</th><th>Max drawdown</th><th>Min. trading days</th><th>Consistency</th></tr>
+        <tr><th>Plan</th><th>Profit target</th><th>Daily loss amount</th><th>Maximum loss</th><th>Consistency</th></tr>
       </thead>
       <tbody>
         <tr>
-          <td><a href="../firms/ftmo.html">FTMO</a> (1-Step)</td><td>10%</td><td>3% fixed</td>
-          <td>EOD trailing, 10%</td><td>0</td><td>Best day ≤ 50% of positive-days profit</td>
+          <td><a href="../firms/ftmo.html">FTMO</a> 1-Step</td><td>10%</td><td>3% of initial simulated capital</td>
+          <td>10% of initial capital, end-of-day trailing floor</td><td>Best day ≤ 50% of total closed profit under the current rule</td>
         </tr>
         <tr>
-          <td><a href="../firms/the5ers.html">The5%ers</a> (1-Step)</td><td>10%</td><td>3% fixed</td>
-          <td>Static, 6%</td><td>0</td><td>Best day ≤ 50% of total profit</td>
+          <td><a href="../firms/the5ers.html">The5%ers</a> Summer 1-Step</td><td>10%</td><td>3% of the higher end-of-day equity or balance, per the Summer Plan page</td>
+          <td>6% of initial balance, static floor</td><td>50% best-day cap</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <h2>What actually differs</h2>
-  <p>
-    Target and daily loss are identical: 10% and 3% fixed, on both. The drawdown mechanic is
-    where they split. The5%ers' 6% floor is <strong>static</strong> — fixed the moment you
-    start, never adjusted. FTMO's 10% floor is modeled as <strong>end-of-day trailing</strong>
-    as confirmed in FTMO's Trading Objectives, meaning it rises
-    with your balance highs rather than staying put.
-  </p>
-  <p>
-    The consistency rules look identical at a glance — both cap your best day at 50% — but the
-    denominator differs. FTMO's version excludes losing days entirely, comparing your best day
-    only to the sum of your positive days. The5%ers' version compares your best day to your
-    <em>total net profit</em>, so a red day drags the denominator down and makes the 50% cap
-    easier to breach in practice.
-  </p>
+  <h2>How the loss limits work</h2>
+  <p>On a $100,000 simulated account, FTMO's maximum-loss floor starts at $90,000. If its balance reaches $104,000 at midnight CE(S)T, the floor rises to $94,000 and stays there if a later reset balance is lower. The5%ers Summer 1-Step starts with a $94,000 maximum-loss floor, fixed from the initial balance. See <a href="https://ftmo.com/en/trading-objectives/">FTMO Trading Objectives</a> and the <a href="https://the5ers.com/summer-plan/">The5%ers Summer Plan rules</a>.</p>
+  <p>FTMO subtracts a fixed daily loss amount from the balance at the daily reset. The5%ers' Summer Plan page says its daily loss amount uses the higher of end-of-day equity or balance. Its separate <a href="https://the5ers.com/faqs/1-step-plan-rules-specifications/">1-Step specification</a> refers to the previous day's closing balance. Check the terms for your account if those values differ.</p>
 
-  <h2>Which suits which trader</h2>
-  <div class="suits-grid">
-    <div class="card">
-      <h3>The5%ers suits you if…</h3>
-      <ul>
-        <li>You want a drawdown floor you can calculate exactly on day one and never have to re-check.</li>
-        <li>You don't expect many red days — its consistency rule punishes them more directly than FTMO's does.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>FTMO suits you if…</h3>
-      <ul>
-        <li>You occasionally have losing days and want a consistency rule that doesn't penalize you for them.</li>
-        <li>You're comfortable with a confirmed end-of-day trailing floor, in exchange for FTMO's broader brand recognition and account-size options.</li>
-      </ul>
-    </div>
-  </div>
+  <h2>How consistency is calculated</h2>
+  <p><strong>FTMO current rule.</strong> For accounts initiated from orders created on or after 12 October 2026, or merged on or after that date, the best day's closed profit can be at most 50% of total closed profit. Losing days reduce that total.</p>
+  <p><strong>FTMO legacy rule.</strong> Accounts directly initiated from earlier orders use the legacy Best Day Rule, subject to the merger rule above. The calculation uses only the net profit of profitable days. For example, daily results of +$6,000, −$2,000 and +$6,000 put the best day at 60% under the current rule and 50% under the legacy rule.</p>
+  <p><strong>The5%ers Summer 1-Step.</strong> The plan confirms a 50% best-day cap. Its <a href="https://the5ers.com/faqs/how-is-the-consistency-calculated/">formula FAQ</a> refers to profits from profitable days. A separate <a href="https://the5ers.com/faqs/what-is-constancy-rule/">consistency FAQ</a> says it adds winning trades only when calculating daily consistency P&amp;L. Check the calculation for your plan before estimating how a day with both winning and losing trades will count.</p>
 
   <div class="cta-card cta-card--app"><span class="promo-label">Your FuturesEdge app</span>
     <h3>Picked one? Track it properly.</h3>
@@ -130,14 +105,11 @@
   </div>
 
   <h2>Frequently asked questions</h2>
-  <h3>Is FTMO or The5%ers' max drawdown stricter on the 1-Step plans?</h3>
-  <p>The5%ers' 1-Step uses a flat static 6% floor that never moves in our data. FTMO's 1-Step uses a confirmed 10% end-of-day trailing floor: the floor rises with the highest preceding midnight balance, unlike a static floor.</p>
+  <h3>How do the two maximum-loss floors work?</h3>
+  <p>On a $100,000 simulated account, the FTMO 1-Step floor starts at $90,000 and can rise with the highest midnight balance. The5%ers Summer 1-Step floor stays at $94,000 because its 6% maximum loss is measured from the initial balance.</p>
 
   <h3>How do FTMO and The5%ers' consistency rules differ?</h3>
-  <p>Both cap your best single day at 50%, but against different denominators. FTMO's 1-Step
-    compares your best day to the sum of only your positive days' profit — losing days don't
-    count against you. The5%ers' 1-Step compares your best day to your total net profit, so red
-    days do count against you, making it the stricter of the two in practice.</p>
+  <p>FTMO's current 1-Step rule uses total closed profit, including losing days. Its legacy Best Day Rule uses profit from profitable days only. The5%ers confirms a 50% cap for Summer 1-Step. Its general FAQs refer to profits from profitable days and say losing trades are excluded from daily consistency P&amp;L.</p>
 
   <p>Rules verified against each firm's official documentation — see the
     <a href="https://github.com/powerFC/propfirm-rules-dataset" target="_blank" rel="noopener">open dataset</a>.</p>
